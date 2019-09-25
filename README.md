@@ -1,1 +1,1 @@
-# cmsi401-palmly
+# Palmly
