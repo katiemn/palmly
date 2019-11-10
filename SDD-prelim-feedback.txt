@@ -1,0 +1,21 @@
+
+
+Another great job by Team Palmly!!  You three are right on top of your game.
+I like the descriptions, and you write clearly and to the point.
+
+Just a couple of suggestions:
+
+The use case diagram should show how the SYSTEM will be used by the USERS,
+not what goes on during development.  You also need a box around the ovals
+that show the use cases, and there should be something about the algorithm
+that you are using ~~ an oval for it, at least.
+
+Your "deployment" diagram doesn't really have enought detail for that type
+of diagram.  It also is a bit light on the content.  Think about what will
+happen when a user wants their palm read, then model the flow of THOSE
+activities with a "flow" diagram of some kind; something like a sequence
+diagram or an activity diagram.
+
+Other than that, very nice and complete work!
+
+you got 10% out of 10% for this deliverable which is an A-plus.
