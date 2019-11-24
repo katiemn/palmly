@@ -14,6 +14,8 @@ I like the descriptions, and you write clearly and to the point.
 Just a couple of suggestions:
 
 
+You still need to make the changes indicated from last time, to wit:
+
 
 The use case diagram should show how the SYSTEM will be used by the 
 USERS,
@@ -35,11 +37,13 @@ flow of THOSE
 like a sequence 
 diagram or an activity diagram.
 
-
-
 Other than that, very nice and complete work!
 
+  I love the color diagrams
+in the detailed diagrams section.
 
+This is such an imaginative project!  Everyone I mention it to says, "OMFG,
+that's SOOOO COOOL!!!"  You ladies really nailed it with this one.
 
 
 you got 10% out of 10% for this deliverable which is an A-plus.
