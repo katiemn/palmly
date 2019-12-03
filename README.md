@@ -53,9 +53,7 @@ cd heart_line_classifier
 ```
 5. A test image has been provided in the directory to classify. You can classify this image, or any other, with the following:
 ```
-python -m label_image \    
-    --graph=retrained_graph.pb  \
-    --image=test_image.jpg
+python -m label_image --graph=retrained_graph.pb --image=test_image.jpg
 ```
 6. Repeat with different images of your choosing. Or, go back to Step 4 and choose a new hand line to classify. 
 
