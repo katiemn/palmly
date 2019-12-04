@@ -51,10 +51,17 @@ cd Classifiers
 ```
 cd heart_line_classifier
 ```
-5. A test image has been provided in the directory to classify. You can classify this image, or any other, with the following:
+5. A test image has been provided in the directory to classify. You can classify this image, or any other, with the following: 
+
+To classify the heart line:
 ```
 python -m label_image --graph=retrained_graph.pb --image=test_image.jpg
 ```
+To classify the head/life lines:
+```
+python label_image.py --graph=retrained_graph.pb --labels=tf_files/retrained_labels.txt --input_layer=Placeholder --output_layer=final_result --image=test_image.jpg
+```
+
 6. Repeat with different images of your choosing. Or, go back to Step 4 and choose a new hand line to classify. 
 
 
