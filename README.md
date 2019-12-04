@@ -68,7 +68,7 @@ The combination of the three line characterizations corresponds to a palm readin
 
 ### Head Line:
 - **Short:** You are a quick thinker who reaches conclusions without any trouble, making you a very decisive individual.   
-- **Long/Straight:** You often find yourself pondering things in great detail, over and over become coming eventually coming to a decision. 
+- **Long/Straight:** You often find yourself pondering things in great detail, over and over before eventually coming to a decision. 
 - **Splits:** You are very sensitive to others, meaning that you can very easily see someone else's perspective from their shoes. This means that you may change your opinion every now and then. 
 - **Long/Curved:** You are a creative thinker who can image various possible outcomes or approaches to any given situation. 
 
