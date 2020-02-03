@@ -1,6 +1,6 @@
 # Palmly User Manual 
 
-![](Documents/palmly-poster.png)
+![](Documents-Fall2019/palmly-poster.png)
 
 ## Neural Networks
 
