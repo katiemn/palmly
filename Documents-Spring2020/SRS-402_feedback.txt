@@ -1,0 +1,23 @@
+
+
+Software Requirements Specification
+CMSI 402 -- Palmly Project
+===================================
+
+Very nice work on this!
+
+The updates reflect the expansion on the design from last semester, and is
+a good description of this second part of the project.
+
+With the exception that one will ALWAYS uncover more requirements as the
+development progresses, I think you have covered the basics nicely.
+
+You might try to add in a few more requirements as you go, and use this SRS
+as the place in which you are documenting things you uncover as time goes on.
+
+Nice job!
+
+You have full credit on this portion of the project.
+
+
+
