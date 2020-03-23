@@ -17,6 +17,7 @@
 		68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */; };
 		68B8502923FB79BD004D3832 /* palmly_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8502823FB79BD004D3832 /* palmly_appTests.swift */; };
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
+		A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC64242874C00066AE5F /* ReadingRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		68B8502F23FB79BD004D3832 /* palmly-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "palmly-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8ECEC64242874C00066AE5F /* ReadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				68B8501323FB79BA004D3832 /* SceneDelegate.swift */,
 				68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */,
 				689717F724025CBC0093904D /* ReadingViewController.swift */,
+				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
 				68B8501A23FB79BC004D3832 /* Assets.xcassets */,
 				68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */,
@@ -270,6 +273,7 @@
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
+				A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
