@@ -13,15 +13,18 @@ struct ReadingViewController: View {
     
     var body: some View {
         NavigationView {
-            VStack(alignment: .leading) {
-                ReadingRow(line: "Life", classification: userReadings[0])
+            NavigationLink(destination: Breakdown()) {
+                VStack(alignment: .leading) {
+                        ReadingRow(line: "Life", classification: userReadings[0])
+                                
+                        ReadingRow(line: "Head", classification: userReadings[1])
                         
-                ReadingRow(line: "Head", classification: userReadings[1])
-                
-                ReadingRow(line: "Heart", classification: userReadings[2])
+                        ReadingRow(line: "Heart", classification: userReadings[2])
+                }
             }
             .navigationBarTitle(Text("Your Reading"))
         }
+        .foregroundColor(.black)
     }
 }
 

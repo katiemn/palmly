@@ -18,6 +18,7 @@
 		68B8502923FB79BD004D3832 /* palmly_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8502823FB79BD004D3832 /* palmly_appTests.swift */; };
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
 		A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC64242874C00066AE5F /* ReadingRow.swift */; };
+		A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC66242880280066AE5F /* Breakdown.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8ECEC64242874C00066AE5F /* ReadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRow.swift; sourceTree = "<group>"; };
+		A8ECEC66242880280066AE5F /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				68B8501323FB79BA004D3832 /* SceneDelegate.swift */,
 				68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */,
 				689717F724025CBC0093904D /* ReadingViewController.swift */,
+				A8ECEC66242880280066AE5F /* Breakdown.swift */,
 				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
 				68B8501A23FB79BC004D3832 /* Assets.xcassets */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */,
 				68B8501623FB79BA004D3832 /* TakePhotoViewController.swift in Sources */,
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
