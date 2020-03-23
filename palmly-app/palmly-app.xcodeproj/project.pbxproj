@@ -17,6 +17,8 @@
 		68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */; };
 		68B8502923FB79BD004D3832 /* palmly_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8502823FB79BD004D3832 /* palmly_appTests.swift */; };
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
+		A8E117A924288D2B001EF8C8 /* TopBarDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */; };
+		A8E117AB2428923B001EF8C8 /* UIVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E117AA2428923B001EF8C8 /* UIVariables.swift */; };
 		A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC64242874C00066AE5F /* ReadingRow.swift */; };
 		A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC66242880280066AE5F /* Breakdown.swift */; };
 		A8ECEC69242883A10066AE5F /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC68242883A10066AE5F /* Personality.swift */; };
@@ -58,6 +60,8 @@
 		68B8502F23FB79BD004D3832 /* palmly-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "palmly-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarDivider.swift; sourceTree = "<group>"; };
+		A8E117AA2428923B001EF8C8 /* UIVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVariables.swift; sourceTree = "<group>"; };
 		A8ECEC64242874C00066AE5F /* ReadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRow.swift; sourceTree = "<group>"; };
 		A8ECEC66242880280066AE5F /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
 		A8ECEC68242883A10066AE5F /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 				A8ECEC68242883A10066AE5F /* Personality.swift */,
 				A8ECEC6A242883B40066AE5F /* Lifestyle.swift */,
 				A8ECEC6C242883EC0066AE5F /* Tabs.swift */,
+				A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */,
+				A8E117AA2428923B001EF8C8 /* UIVariables.swift */,
 				A8ECEC66242880280066AE5F /* Breakdown.swift */,
 				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
@@ -287,6 +293,8 @@
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
+				A8E117AB2428923B001EF8C8 /* UIVariables.swift in Sources */,
+				A8E117A924288D2B001EF8C8 /* TopBarDivider.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
 				A8ECEC69242883A10066AE5F /* Personality.swift in Sources */,
 				A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */,

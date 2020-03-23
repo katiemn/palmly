@@ -52,10 +52,11 @@ struct ReadingRow: View {
         GeometryReader { geometry in
             VStack(alignment: .leading) {
                 Text(self.line)
-                    .font(.title)
+                    .font(.largeTitle)
                     .padding()
                 Text((self.line == "Head") ? getHeadReading(classification: self.classification)! : (self.line == "Heart") ? getHeartReading(classification: self.classification)! : getLifeReading(classification: self.classification)!)
-                    .padding()
+                    .padding(.leading)
+                    .padding(.trailing)
             }
             .frame(width: geometry.size.width,
                 height: nil,
