@@ -19,6 +19,9 @@
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
 		A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC64242874C00066AE5F /* ReadingRow.swift */; };
 		A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC66242880280066AE5F /* Breakdown.swift */; };
+		A8ECEC69242883A10066AE5F /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC68242883A10066AE5F /* Personality.swift */; };
+		A8ECEC6B242883B40066AE5F /* Lifestyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC6A242883B40066AE5F /* Lifestyle.swift */; };
+		A8ECEC6D242883EC0066AE5F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC6C242883EC0066AE5F /* Tabs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8ECEC64242874C00066AE5F /* ReadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRow.swift; sourceTree = "<group>"; };
 		A8ECEC66242880280066AE5F /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
+		A8ECEC68242883A10066AE5F /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
+		A8ECEC6A242883B40066AE5F /* Lifestyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifestyle.swift; sourceTree = "<group>"; };
+		A8ECEC6C242883EC0066AE5F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +117,9 @@
 				68B8501323FB79BA004D3832 /* SceneDelegate.swift */,
 				68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */,
 				689717F724025CBC0093904D /* ReadingViewController.swift */,
+				A8ECEC68242883A10066AE5F /* Personality.swift */,
+				A8ECEC6A242883B40066AE5F /* Lifestyle.swift */,
+				A8ECEC6C242883EC0066AE5F /* Tabs.swift */,
 				A8ECEC66242880280066AE5F /* Breakdown.swift */,
 				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
@@ -271,12 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8ECEC6B242883B40066AE5F /* Lifestyle.swift in Sources */,
 				A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */,
 				68B8501623FB79BA004D3832 /* TakePhotoViewController.swift in Sources */,
+				A8ECEC6D242883EC0066AE5F /* Tabs.swift in Sources */,
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
+				A8ECEC69242883A10066AE5F /* Personality.swift in Sources */,
 				A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
