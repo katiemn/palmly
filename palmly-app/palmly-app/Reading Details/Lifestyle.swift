@@ -1,5 +1,5 @@
 //
-//  Breakdown.swift
+//  Lifestyle.swift
 //  palmly-app
 //
 //  Created by Vincent Fitzgerald Tolliver on 3/22/20.
@@ -8,14 +8,17 @@
 
 import SwiftUI
 
-struct Breakdown: View {
+struct Lifestyle: View {
     var body: some View {
-        Text("This will be the breakdown!")
+        VStack {
+            
+            Text("This will be the lifestyle!")
+        }
     }
 }
 
-struct Breakdown_Previews: PreviewProvider {
+struct Lifestyle_Previews: PreviewProvider {
     static var previews: some View {
-        Breakdown()
+        Lifestyle()
     }
 }

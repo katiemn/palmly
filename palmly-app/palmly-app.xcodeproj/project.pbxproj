@@ -24,6 +24,11 @@
 		A8ECEC69242883A10066AE5F /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC68242883A10066AE5F /* Personality.swift */; };
 		A8ECEC6B242883B40066AE5F /* Lifestyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC6A242883B40066AE5F /* Lifestyle.swift */; };
 		A8ECEC6D242883EC0066AE5F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC6C242883EC0066AE5F /* Tabs.swift */; };
+		A8FB22EA24295DEF006E1082 /* Zilla_Slab in Resources */ = {isa = PBXBuildFile; fileRef = A8FB22E924295DEF006E1082 /* Zilla_Slab */; };
+		A8FB22EC24295DF9006E1082 /* DM_Sans in Resources */ = {isa = PBXBuildFile; fileRef = A8FB22EB24295DF9006E1082 /* DM_Sans */; };
+		A8FB22F0242960A9006E1082 /* PercentageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB22EF242960A9006E1082 /* PercentageBar.swift */; };
+		A8FB22F324296A59006E1082 /* BreakdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB22F224296A59006E1082 /* BreakdownRow.swift */; };
+		A8FB22F524296B54006E1082 /* ReadingFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB22F424296B54006E1082 /* ReadingFuncs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,11 @@
 		A8ECEC68242883A10066AE5F /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
 		A8ECEC6A242883B40066AE5F /* Lifestyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifestyle.swift; sourceTree = "<group>"; };
 		A8ECEC6C242883EC0066AE5F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
+		A8FB22E924295DEF006E1082 /* Zilla_Slab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Zilla_Slab; sourceTree = "<group>"; };
+		A8FB22EB24295DF9006E1082 /* DM_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DM_Sans; sourceTree = "<group>"; };
+		A8FB22EF242960A9006E1082 /* PercentageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageBar.swift; sourceTree = "<group>"; };
+		A8FB22F224296A59006E1082 /* BreakdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownRow.swift; sourceTree = "<group>"; };
+		A8FB22F424296B54006E1082 /* ReadingFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingFuncs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,17 +127,13 @@
 		68B8501023FB79BA004D3832 /* palmly-app */ = {
 			isa = PBXGroup;
 			children = (
+				A8FB22EE2429605D006E1082 /* Reading View */,
 				68B8501123FB79BA004D3832 /* AppDelegate.swift */,
 				68B8501323FB79BA004D3832 /* SceneDelegate.swift */,
 				68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */,
-				689717F724025CBC0093904D /* ReadingViewController.swift */,
-				A8ECEC68242883A10066AE5F /* Personality.swift */,
-				A8ECEC6A242883B40066AE5F /* Lifestyle.swift */,
-				A8ECEC6C242883EC0066AE5F /* Tabs.swift */,
+				A8FB22ED24296031006E1082 /* Reading Details */,
+				A8FB22E824295C6A006E1082 /* Resources */,
 				A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */,
-				A8E117AA2428923B001EF8C8 /* UIVariables.swift */,
-				A8ECEC66242880280066AE5F /* Breakdown.swift */,
-				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
 				68B8501A23FB79BC004D3832 /* Assets.xcassets */,
 				68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */,
@@ -153,6 +159,47 @@
 				68B8503523FB79BD004D3832 /* Info.plist */,
 			);
 			path = "palmly-appUITests";
+			sourceTree = "<group>";
+		};
+		A8FB22E824295C6A006E1082 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB22EB24295DF9006E1082 /* DM_Sans */,
+				A8FB22E924295DEF006E1082 /* Zilla_Slab */,
+				A8E117AA2428923B001EF8C8 /* UIVariables.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A8FB22ED24296031006E1082 /* Reading Details */ = {
+			isa = PBXGroup;
+			children = (
+				A8ECEC6C242883EC0066AE5F /* Tabs.swift */,
+				A8ECEC68242883A10066AE5F /* Personality.swift */,
+				A8ECEC6A242883B40066AE5F /* Lifestyle.swift */,
+				A8FB22F124296A49006E1082 /* Breakdown */,
+			);
+			path = "Reading Details";
+			sourceTree = "<group>";
+		};
+		A8FB22EE2429605D006E1082 /* Reading View */ = {
+			isa = PBXGroup;
+			children = (
+				689717F724025CBC0093904D /* ReadingViewController.swift */,
+				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
+				A8FB22F424296B54006E1082 /* ReadingFuncs.swift */,
+			);
+			path = "Reading View";
+			sourceTree = "<group>";
+		};
+		A8FB22F124296A49006E1082 /* Breakdown */ = {
+			isa = PBXGroup;
+			children = (
+				A8FB22F224296A59006E1082 /* BreakdownRow.swift */,
+				A8ECEC66242880280066AE5F /* Breakdown.swift */,
+				A8FB22EF242960A9006E1082 /* PercentageBar.swift */,
+			);
+			path = Breakdown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +308,9 @@
 			files = (
 				68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */,
 				68B8501B23FB79BC004D3832 /* Assets.xcassets in Resources */,
+				A8FB22EC24295DF9006E1082 /* DM_Sans in Resources */,
 				68B8501923FB79BA004D3832 /* Main.storyboard in Resources */,
+				A8FB22EA24295DEF006E1082 /* Zilla_Slab in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +341,11 @@
 				A8ECEC6D242883EC0066AE5F /* Tabs.swift in Sources */,
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
+				A8FB22F324296A59006E1082 /* BreakdownRow.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
 				A8E117AB2428923B001EF8C8 /* UIVariables.swift in Sources */,
+				A8FB22F524296B54006E1082 /* ReadingFuncs.swift in Sources */,
+				A8FB22F0242960A9006E1082 /* PercentageBar.swift in Sources */,
 				A8E117A924288D2B001EF8C8 /* TopBarDivider.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
 				A8ECEC69242883A10066AE5F /* Personality.swift in Sources */,

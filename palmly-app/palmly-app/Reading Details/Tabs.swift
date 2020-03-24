@@ -1,5 +1,5 @@
 //
-//  Lifestyle.swift
+//  Tabs.swift
 //  palmly-app
 //
 //  Created by Vincent Fitzgerald Tolliver on 3/22/20.
@@ -8,14 +8,15 @@
 
 import SwiftUI
 
-struct Lifestyle: View {
+struct Tabs: View {    
     var body: some View {
-        Text("My Lifestyle")
+        Text("hello")
     }
 }
+    
 
-struct Lifestyle_Previews: PreviewProvider {
+struct Tabs_Previews: PreviewProvider {
     static var previews: some View {
-        Lifestyle()
+        Tabs()
     }
 }

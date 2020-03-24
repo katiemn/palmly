@@ -10,7 +10,10 @@ import SwiftUI
 
 struct Personality: View {
     var body: some View {
-        Text("Hello, Personality!")
+        VStack {
+        
+            Text("This will be the personality!")
+        }
     }
 }
 

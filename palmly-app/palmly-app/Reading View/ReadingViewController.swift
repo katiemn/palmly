@@ -13,7 +13,7 @@ struct ReadingViewController: View {
     
     var body: some View {
         NavigationView {
-            NavigationLink(destination: Tabs()) {
+            
                 ZStack {
                     TopBarDivider()
                     VStack(alignment: .leading) {
@@ -28,7 +28,6 @@ struct ReadingViewController: View {
             }
             .foregroundColor(.black)
         }
-    }
 }
 
 struct ReadingViewController_Previews: PreviewProvider {
