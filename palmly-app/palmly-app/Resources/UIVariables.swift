@@ -8,3 +8,4 @@
 import SwiftUI
 
 var topDividerGrey = Color(red: 0.898, green: 0.898, blue: 0.898)
+var descriptionGrey = Color(red: 0.686, green: 0.670, blue: 0.670)

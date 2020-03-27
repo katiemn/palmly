@@ -9,19 +9,23 @@
 import SwiftUI
 
 struct TopBarDivider: View {
+    var yOffset: CGFloat
+    var screenWidth: CGFloat
+    
     var body: some View {
-        GeometryReader{ geometry in
+        ZStack(alignment: .center) {
             Rectangle()
-                .fill(topDividerGrey)
-                .frame(width: geometry.size.width - 20, height: 5)
-                .offset(y: -350)
-
+            .fill(topDividerGrey)
+                .frame(width: self.screenWidth - 20, height: 5)
+                .offset(y: self.yOffset)
         }
     }
 }
 
 struct TopBarDivider_Previews: PreviewProvider {
     static var previews: some View {
-        TopBarDivider()
+        GeometryReader { geometry in
+            TopBarDivider(yOffset: 0, screenWidth: geometry.size.width-20)
+        }
     }
 }

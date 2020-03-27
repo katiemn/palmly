@@ -10,7 +10,13 @@ import SwiftUI
 
 struct TabUnderline: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader{ geometry in
+            Rectangle()
+                .fill(topDividerGrey)
+                .frame(width: geometry.size.width - 20, height: 5)
+                .offset(y: -350)
+
+        }
     }
 }
 

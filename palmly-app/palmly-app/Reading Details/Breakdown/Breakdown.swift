@@ -8,12 +8,6 @@
 
 import SwiftUI
 
-struct ProbableReading {
-    var id: Int
-    var meaning: String
-    var percentage: CGFloat
-}
-
 struct Breakdown: View {
     var line: String
     var topReadings: [ProbableReading]

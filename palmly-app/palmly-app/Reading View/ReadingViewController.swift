@@ -15,15 +15,18 @@ struct ReadingViewController: View {
         NavigationView {
             
                 ZStack {
-                    TopBarDivider()
-                    VStack(alignment: .leading) {
-                            ReadingRow(line: "Life", classification: userReadings[0])
-                                    
-                            ReadingRow(line: "Head", classification: userReadings[1])
-                            
-                            ReadingRow(line: "Heart", classification: userReadings[2])
+                    GeometryReader { geometry in
+                        TopBarDivider(yOffset: 0, screenWidth: geometry.size.width)
+            
+                        VStack(alignment: .leading) {
+                            ReadingRow(line: "Life", classification: self.userReadings[0])
+                                        
+                            ReadingRow(line: "Head", classification: self.userReadings[1])
+                                
+                            ReadingRow(line: "Heart", classification: self.userReadings[2])
+                        }
+                        .navigationBarTitle(Text("Your Reading"))
                     }
-                    .navigationBarTitle(Text("Your Reading"))
                 }
             }
             .foregroundColor(.black)
