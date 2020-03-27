@@ -36,6 +36,7 @@ struct PersonalityCard: View {
             
             TopBarDivider(yOffset: 0, screenWidth: 400)
         }
+    .foregroundColor(Color.black)
     .padding()
     }
 }

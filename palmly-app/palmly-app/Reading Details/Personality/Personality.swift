@@ -14,10 +14,15 @@ struct Personality: View {
     var personalityObjects: [PersonalityObject]
     
     var body: some View {
-        VStack {
-            ForEach(personalityObjects, id: \.id) {personality in
-                PersonalityCard(personality: personality)
+        NavigationView {
+            VStack {
+                ForEach(personalityObjects, id: \.id) {personalityObj in
+                    NavigationLink(destination:
+                    PersonalityShareable(personality: personalityObj)) {
+                        PersonalityCard(personality: personalityObj)
+                    }
                 }
+            }
         }
     }
 }
