@@ -23,10 +23,6 @@ struct Breakdown: View {
 
 struct Breakdown_Previews: PreviewProvider {
     static var previews: some View {
-        Breakdown(line: "Life", topReadings: [
-            ProbableReading(id: 1, meaning: "short", percentage: CGFloat(0.8)),
-            ProbableReading(id: 2, meaning: "long", percentage: CGFloat(0.13)),
-            ProbableReading(id: 3, meaning: "faint", percentage: CGFloat(0.07))
-        ])
+        Breakdown(line: "Life", topReadings: testTopReadings)
     }
 }

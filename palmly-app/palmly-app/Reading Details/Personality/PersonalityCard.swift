@@ -9,18 +9,18 @@
 import SwiftUI
 
 struct PersonalityCard: View {
-    var title: String
-    var description: String
+    var personality: PersonalityObject
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(self.title)
+            Text(self.personality.title)
             .font(Font.custom("DMSans", size: 36))
             
-            Text(self.description)
+            Text(self.personality.description)
+            .lineLimit(3)
             .font(Font.custom("DMSans", size: 18))
             .foregroundColor(descriptionGrey)
-                .fixedSize()
+                .fixedSize(horizontal: false, vertical: true)
                 .frame(width: 350, height: 90, alignment: .topLeading)
                 .padding(.top)
             
@@ -42,6 +42,6 @@ struct PersonalityCard: View {
 
 struct PersonalityCard_Previews: PreviewProvider {
     static var previews: some View {
-        PersonalityCard(title: "Meyers-Briggs", description: "Introverted, Intuitive, Thinker, Judger")
+        PersonalityCard(personality: testPersonality)
     }
 }

@@ -10,16 +10,11 @@ import SwiftUI
 
 var globalCurrentTab = "Breakdown"
 
-struct ProbableReading {
-    var id: Int
-    var meaning: String
-    var percentage: CGFloat
-    
-}
-
 struct DetailsView: View {
     var line: String
     var topReadings: [ProbableReading]
+    var personalityObjects: [PersonalityObject]
+    
     @State private var currentTab = globalCurrentTab
 
     var body: some View {
@@ -31,7 +26,7 @@ struct DetailsView: View {
                     if globalCurrentTab == "Breakdown" {
                         Breakdown(line: self.line, topReadings: self.topReadings)
                     } else if globalCurrentTab == "Personality" {
-                        Personality()
+                        Personality(line: self.line, personalityObjects: self.personalityObjects)
                     } else {
                         Lifestyle()
                     }
@@ -46,10 +41,8 @@ struct DetailsView: View {
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(line: "Life", topReadings: [
-            ProbableReading(id: 1, meaning: "short", percentage: CGFloat(0.8)),
-            ProbableReading(id: 2, meaning: "long", percentage: CGFloat(0.13)),
-            ProbableReading(id: 3, meaning: "faint", percentage: CGFloat(0.07))
-        ])
+        DetailsView(line: "Life",
+                    topReadings: testTopReadings,
+                    personalityObjects: testPersonalityObjects)
     }
 }
