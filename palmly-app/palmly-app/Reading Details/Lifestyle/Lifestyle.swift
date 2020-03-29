@@ -13,14 +13,29 @@ var circleTabColor = Color(red: 0.898, green: 0.898, blue: 0.898)
 
 struct Lifestyle: View {
     @State private var selected = 0
+    @State private var offset: CGSize = .zero
+    
     var lifestyleTips: [String]
     
     func changeTab(tabIndex: Int) {
-        selected = tabIndex
+        print("tabIndex: $\(tabIndex)")
+        if (tabIndex >= 0 && tabIndex < self.lifestyleTips.count) {
+            print("we get here too")
+            selected = tabIndex
+        }
     }
     
     var body: some View {
-        GeometryReader { geometry in
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    self.changeTab(tabIndex: self.selected+1)
+                } else if $0.translation.width > 100 {
+                    self.changeTab(tabIndex: self.selected-1)
+                }
+        }
+        
+        return GeometryReader { geometry in
             VStack() {
                 Spacer()
 
@@ -30,7 +45,7 @@ struct Lifestyle: View {
                     .font(Font.custom("DMSans", size: 24))
                     .padding(geometry.size.width * 0.1)
                     .lineSpacing(10)
-                
+
                 Spacer()
                                 
                 HStack(alignment: .center, spacing: (geometry.size.width * 0.4 / CGFloat(self.lifestyleTips.count))) {
@@ -46,6 +61,8 @@ struct Lifestyle: View {
                 .frame(width: geometry.size.width * 0.8)
                 .offset(y: -50)
             }
+//            .offset(x: self.offset.width, y: self.offset.height)
+            .gesture(drag)
         }
     }
 }
