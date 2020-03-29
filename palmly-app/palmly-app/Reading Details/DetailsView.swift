@@ -14,6 +14,7 @@ struct DetailsView: View {
     var line: String
     var topReadings: [ProbableReading]
     var personalityObjects: [PersonalityObject]
+    var lifestyleTips: [String]
     
     @State private var currentTab = globalCurrentTab
 
@@ -28,7 +29,7 @@ struct DetailsView: View {
                     } else if globalCurrentTab == "Personality" {
                         Personality(line: self.line, personalityObjects: self.personalityObjects)
                     } else {
-                        Lifestyle()
+                        Lifestyle(lifestyleTips: self.lifestyleTips)
                     }
                     
                 }
@@ -43,6 +44,7 @@ struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
         DetailsView(line: "Life",
                     topReadings: testTopReadings,
-                    personalityObjects: testPersonalityObjects)
+                    personalityObjects: testPersonalityObjects,
+                    lifestyleTips: testLifestyleTips)
     }
 }

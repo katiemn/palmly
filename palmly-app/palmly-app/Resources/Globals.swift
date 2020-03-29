@@ -30,6 +30,12 @@ var testPersonalityObjects = [
     link: "thebigfive.com")
 ]
 
+var testLifestyleTips = [
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "In ornare quam viverra orci sagittis eu volutpat. Morbi non arcu risus quis varius quam quisque id diam. Nam libero justo laoreet sit amet. Nullam eget felis eget nunc lobortis mattis. Urna neque viverra justo nec ultrices dui sapien eget. Nec feugiat nisl pretium fusce id velit ut tortor. Aliquet enim tortor at auctor urna.",
+    "Et ligula ullamcorper malesuada proin. Sagittis purus sit amet volutpat consequat mauris nunc."
+]
+
 //-------------------------------------------------------//
 //                      STRUCTURES                       //
 //-------------------------------------------------------//
