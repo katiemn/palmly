@@ -36,6 +36,8 @@ var testLifestyleTips = [
     "Et ligula ullamcorper malesuada proin. Sagittis purus sit amet volutpat consequat mauris nunc."
 ]
 
+var testUserReadings = ["short", "long, curved", "splits"]
+
 //-------------------------------------------------------//
 //                      STRUCTURES                       //
 //-------------------------------------------------------//

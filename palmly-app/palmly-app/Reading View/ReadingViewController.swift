@@ -26,6 +26,7 @@ struct ReadingViewController: View {
                             ReadingRow(line: "Heart", classification: self.userReadings[2])
                         }
                         .navigationBarTitle(Text("Your Reading"))
+                    .navigationBarBackButtonHidden(true)
                     }
                 }
             }
