@@ -9,13 +9,32 @@
 import SwiftUI
 
 struct Header: View {
+    
+    var title: String
+    @ObservedObject var viewRouter: ViewRouter
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack(alignment: .leading) {
+            Button(action: { self.viewRouter.currentPage -= 1}) {
+                Image("left arrow")
+            }
+            Rectangle()
+                .fill(Color.black)
+                .frame(width: 380, height: 5)
+            
+            Text(self.title)
+                .font(.title)
+            
+            Rectangle()
+            .fill(topDividerGrey)
+            .frame(width: 380, height: 2)
+                .offset(y: 30)
+        }
     }
 }
 
 struct Header_Previews: PreviewProvider {
     static var previews: some View {
-        Header()
+        Header(title: "Your Reading", viewRouter: ViewRouter())
     }
 }
