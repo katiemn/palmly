@@ -11,6 +11,7 @@ import SwiftUI
 var globalCurrentTab = "Breakdown"
 
 struct DetailsView: View {
+    @ObservedObject var viewRouter: ViewRouter
     var line: String
     var topReadings: [ProbableReading]
     var personalityObjects: [PersonalityObject]
@@ -20,29 +21,31 @@ struct DetailsView: View {
 
     var body: some View {
         VStack {
-            GeometryReader { geometry in
-                TopBarDivider(yOffset: 0, screenWidth: geometry.size.width)
+            Header(title: self.line, viewRouter: self.viewRouter)
             
-                ZStack {
-                    if globalCurrentTab == "Breakdown" {
-                        Breakdown(line: self.line, topReadings: self.topReadings)
-                    } else if globalCurrentTab == "Personality" {
-                        Personality(line: self.line, personalityObjects: self.personalityObjects)
-                    } else {
-                        Lifestyle(lifestyleTips: self.lifestyleTips)
-                    }
-                    
-                }
-                
-                Spacer()
+            Spacer()
+            
+            Tabs(viewRouter: self.viewRouter)
+                .padding()
+            
+            Spacer()
+            
+            if self.viewRouter.currentTab == 0 {
+                Breakdown(line: self.line, topReadings: self.topReadings)
+                .padding()
+            } else if self.viewRouter.currentTab == 1 {
+                Personality(line: self.line, personalityObjects: self.personalityObjects)
+            } else {
+                Lifestyle(lifestyleTips: self.lifestyleTips)
             }
+                
         }
     }
 }
 
 struct DetailsView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailsView(line: "Life",
+        DetailsView(viewRouter: ViewRouter(), line: "Life",
                     topReadings: testTopReadings,
                     personalityObjects: testPersonalityObjects,
                     lifestyleTips: testLifestyleTips)

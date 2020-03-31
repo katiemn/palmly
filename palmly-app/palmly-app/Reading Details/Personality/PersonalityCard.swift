@@ -15,26 +15,33 @@ struct PersonalityCard: View {
         VStack(alignment: .leading) {
             Text(self.personality.title)
             .font(Font.custom("DMSans", size: 36))
+                .padding(.leading)
             
             Text(self.personality.description)
             .lineLimit(3)
             .font(Font.custom("DMSans", size: 18))
             .foregroundColor(descriptionGrey)
                 .fixedSize(horizontal: false, vertical: true)
-                .frame(width: 350, height: 90, alignment: .topLeading)
                 .padding(.top)
+                .padding(.leading)
             
-            HStack(spacing: 0) {
+            Spacer()
+            
+            HStack() {
                 Text("Learn More")
                 .font(Font.custom("DMSans", size: 16))
-                    .frame(width: 175, alignment: .leading)
                 
-                Image("back arrow")
-                .frame(width: 175, alignment: .trailing)
+                Spacer()
+                
+                Image("right arrow")
             }
-            .frame(width: 350)
+            .padding(.leading)
+            .padding(.trailing)
             
-            TopBarDivider(yOffset: 0, screenWidth: 400)
+            Rectangle()
+            .fill(topDividerGrey)
+            .frame(width: 360, height: 2)
+                .padding(.leading)
         }
     .foregroundColor(Color.black)
     .padding()

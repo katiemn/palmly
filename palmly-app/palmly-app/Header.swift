@@ -15,8 +15,13 @@ struct Header: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-            Button(action: { self.viewRouter.currentPage -= 1}) {
+            Button(action: {
+                if self.viewRouter.currentPage > 0 {
+                    self.viewRouter.currentPage -= 1
+                }
+                }) {
                 Image("left arrow")
+                    .foregroundColor(Color.black)
             }
             Rectangle()
                 .fill(Color.black)
@@ -26,9 +31,12 @@ struct Header: View {
                 .font(.title)
             
             Rectangle()
+            .fill(Color.white)
+            .frame(width: 380, height: 28)
+            
+            Rectangle()
             .fill(topDividerGrey)
             .frame(width: 380, height: 2)
-                .offset(y: 30)
         }
     }
 }

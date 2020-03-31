@@ -18,9 +18,7 @@ struct Lifestyle: View {
     var lifestyleTips: [String]
     
     func changeTab(tabIndex: Int) {
-        print("tabIndex: $\(tabIndex)")
         if (tabIndex >= 0 && tabIndex < self.lifestyleTips.count) {
-            print("we get here too")
             selected = tabIndex
         }
     }
@@ -37,7 +35,6 @@ struct Lifestyle: View {
         
         return GeometryReader { geometry in
             VStack() {
-                Spacer()
 
                 Text(self.lifestyleTips[self.selected])
                     .fixedSize(horizontal: false, vertical: true)
@@ -45,7 +42,8 @@ struct Lifestyle: View {
                     .font(Font.custom("DMSans", size: 24))
                     .padding(geometry.size.width * 0.1)
                     .lineSpacing(10)
-
+                    
+                
                 Spacer()
                                 
                 HStack(alignment: .center, spacing: (geometry.size.width * 0.4 / CGFloat(self.lifestyleTips.count))) {
@@ -61,7 +59,6 @@ struct Lifestyle: View {
                 .frame(width: geometry.size.width * 0.8)
                 .offset(y: -50)
             }
-//            .offset(x: self.offset.width, y: self.offset.height)
             .gesture(drag)
         }
     }

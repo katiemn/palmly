@@ -9,49 +9,52 @@
 import SwiftUI
 
 struct Tabs: View {
-    @State var currentTab = globalCurrentTab
+    @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
-                
-        HStack {
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width < -100 {
+                    if (self.viewRouter.currentTab < 2) {
+                        self.viewRouter.currentTab += 1
+                    }
+                } else if $0.translation.width > 100 {
+                    if (self.viewRouter.currentTab > 0) {
+                        self.viewRouter.currentTab -= 1
+                    }
+                }
+        }
+        
+        return HStack(spacing: 35) {
             Button(action: {
-                self.switchTab(tab: "Breakdown")
+                self.viewRouter.currentTab = 0
             }) {
                 Text("Breakdown")
-                    .font(self.tabFont(tab: "Breakdown"))
+                    .font((self.viewRouter.currentTab == 0) ? .title : .subheadline)
             }
+            
             Button(action: {
-                self.switchTab(tab: "Personality")
+                self.viewRouter.currentTab = 1
             }) {
                 Text("Personality")
-                .font(self.tabFont(tab: "Personality"))
+                .font((self.viewRouter.currentTab == 1) ? .title : .subheadline)
             }
+            
             Button(action: {
-                self.switchTab(tab: "Lifestyle")
+                self.viewRouter.currentTab = 2
             }) {
                 Text("Lifestyle")
-                .font(self.tabFont(tab: "Lifestyle"))
+                .font((self.viewRouter.currentTab == 2) ? .title : .subheadline)
             }
         }
         .foregroundColor(Color.black)
-    }
-    
-    func switchTab(tab: String) {
-        globalCurrentTab = tab
-        currentTab = tab
-    }
-    
-    func tabFont(tab: String) -> Font {
-        if (currentTab == tab) {
-            return Font.custom("ZillaSlab", size: 30)
-        }
-        return Font.custom("ZillaSlab", size: 24)
+        .gesture(drag)
     }
 }
     
 
 struct Tabs_Previews: PreviewProvider {
     static var previews: some View {
-        Tabs(currentTab: "Breakdown")
+        Tabs(viewRouter: ViewRouter())
     }
 }
