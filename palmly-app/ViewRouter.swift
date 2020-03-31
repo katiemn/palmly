@@ -6,16 +6,11 @@
 //  Copyright © 2020 Katie Nguyen. All rights reserved.
 //
 
+import Foundation
+import Combine
 import SwiftUI
 
-struct ViewRouter: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct ViewRouter_Previews: PreviewProvider {
-    static var previews: some View {
-        ViewRouter()
-    }
+class ViewRouter: ObservableObject {
+    @Published var currentPage: Int = 0
+    @Published var currentTab: Int = 0
 }

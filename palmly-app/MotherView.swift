@@ -9,8 +9,22 @@
 import SwiftUI
 
 struct MotherView: View {
+    
+    @ObservedObject var viewRouter = ViewRouter()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            if (self.viewRouter.currentPage == 0) {
+                TakePhoto(viewRouter: self.viewRouter)
+            } else if (self.viewRouter.currentPage == 1) {
+                ReadingViewController(viewRouter: self.viewRouter, userReadings: ["short", "long, curved", "splits"])
+            } else {
+                DetailsView(viewRouter: self.viewRouter, line: "Life",
+                topReadings: testTopReadings,
+                personalityObjects: testPersonalityObjects,
+                lifestyleTips: testLifestyleTips)
+            }
+        }
     }
 }
 

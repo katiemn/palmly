@@ -18,9 +18,14 @@
 		68B8502923FB79BD004D3832 /* palmly_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8502823FB79BD004D3832 /* palmly_appTests.swift */; };
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
 		A81C9E302429EE53005946F6 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A81C9E2F2429EE53005946F6 /* DetailsView.swift */; };
+		A874EAFC24316B6800236E73 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A874EAFB24316B6800236E73 /* Header.swift */; };
+		A88C52C3243303FC0008150F /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C52C2243303FC0008150F /* MotherView.swift */; };
+		A88C52C7243307B60008150F /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88C52C6243307B60008150F /* ViewRouter.swift */; };
 		A88DCAEF242DA6CC00887088 /* PersonalityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DCAEE242DA6CC00887088 /* PersonalityCard.swift */; };
-		A8E117A924288D2B001EF8C8 /* TopBarDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */; };
-		A8E117AB2428923B001EF8C8 /* UIVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E117AA2428923B001EF8C8 /* UIVariables.swift */; };
+		A88DCAF3242DC03700887088 /* PersonalityShareable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A88DCAF2242DC03700887088 /* PersonalityShareable.swift */; };
+		A89013132431D3F900B8B5BC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89013122431D3F900B8B5BC /* ImagePicker.swift */; };
+		A89013152431D75C00B8B5BC /* TakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89013142431D75C00B8B5BC /* TakePhoto.swift */; };
+		A8E117AB2428923B001EF8C8 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E117AA2428923B001EF8C8 /* Globals.swift */; };
 		A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC64242874C00066AE5F /* ReadingRow.swift */; };
 		A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC66242880280066AE5F /* Breakdown.swift */; };
 		A8ECEC69242883A10066AE5F /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC68242883A10066AE5F /* Personality.swift */; };
@@ -68,9 +73,14 @@
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81C9E2F2429EE53005946F6 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		A874EAFB24316B6800236E73 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		A88C52C2243303FC0008150F /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
+		A88C52C6243307B60008150F /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
 		A88DCAEE242DA6CC00887088 /* PersonalityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityCard.swift; sourceTree = "<group>"; };
-		A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarDivider.swift; sourceTree = "<group>"; };
-		A8E117AA2428923B001EF8C8 /* UIVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIVariables.swift; sourceTree = "<group>"; };
+		A88DCAF2242DC03700887088 /* PersonalityShareable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityShareable.swift; sourceTree = "<group>"; };
+		A89013122431D3F900B8B5BC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		A89013142431D75C00B8B5BC /* TakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhoto.swift; sourceTree = "<group>"; };
+		A8E117AA2428923B001EF8C8 /* Globals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		A8ECEC64242874C00066AE5F /* ReadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRow.swift; sourceTree = "<group>"; };
 		A8ECEC66242880280066AE5F /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
 		A8ECEC68242883A10066AE5F /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
@@ -111,6 +121,10 @@
 		68B8500523FB79BA004D3832 = {
 			isa = PBXGroup;
 			children = (
+				A88C52C6243307B60008150F /* ViewRouter.swift */,
+				A88C52C2243303FC0008150F /* MotherView.swift */,
+				A89013122431D3F900B8B5BC /* ImagePicker.swift */,
+				A89013142431D75C00B8B5BC /* TakePhoto.swift */,
 				68B8501023FB79BA004D3832 /* palmly-app */,
 				68B8502723FB79BD004D3832 /* palmly-appTests */,
 				68B8503223FB79BD004D3832 /* palmly-appUITests */,
@@ -137,7 +151,7 @@
 				68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */,
 				A8FB22ED24296031006E1082 /* Reading Details */,
 				A8FB22E824295C6A006E1082 /* Resources */,
-				A8E117A824288D2B001EF8C8 /* TopBarDivider.swift */,
+				A874EAFB24316B6800236E73 /* Header.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
 				68B8501A23FB79BC004D3832 /* Assets.xcassets */,
 				68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */,
@@ -177,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				A8ECEC68242883A10066AE5F /* Personality.swift */,
+				A88DCAF2242DC03700887088 /* PersonalityShareable.swift */,
 				A88DCAEE242DA6CC00887088 /* PersonalityCard.swift */,
 			);
 			path = Personality;
@@ -187,7 +202,7 @@
 			children = (
 				A8FB22EB24295DF9006E1082 /* DM_Sans */,
 				A8FB22E924295DEF006E1082 /* Zilla_Slab */,
-				A8E117AA2428923B001EF8C8 /* UIVariables.swift */,
+				A8E117AA2428923B001EF8C8 /* Globals.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -357,21 +372,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A874EAFC24316B6800236E73 /* Header.swift in Sources */,
 				A8ECEC6B242883B40066AE5F /* Lifestyle.swift in Sources */,
+				A88C52C7243307B60008150F /* ViewRouter.swift in Sources */,
 				A8ECEC67242880280066AE5F /* Breakdown.swift in Sources */,
 				68B8501623FB79BA004D3832 /* TakePhotoViewController.swift in Sources */,
+				A89013152431D75C00B8B5BC /* TakePhoto.swift in Sources */,
 				A8ECEC6D242883EC0066AE5F /* Tabs.swift in Sources */,
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				A8FB22F324296A59006E1082 /* BreakdownRow.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
-				A8E117AB2428923B001EF8C8 /* UIVariables.swift in Sources */,
+				A8E117AB2428923B001EF8C8 /* Globals.swift in Sources */,
 				A8FB22F524296B54006E1082 /* ReadingFuncs.swift in Sources */,
 				A88DCAEF242DA6CC00887088 /* PersonalityCard.swift in Sources */,
 				A8FB22F0242960A9006E1082 /* PercentageBar.swift in Sources */,
-				A8E117A924288D2B001EF8C8 /* TopBarDivider.swift in Sources */,
+				A88DCAF3242DC03700887088 /* PersonalityShareable.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
+				A88C52C3243303FC0008150F /* MotherView.swift in Sources */,
 				A81C9E302429EE53005946F6 /* DetailsView.swift in Sources */,
+				A89013132431D3F900B8B5BC /* ImagePicker.swift in Sources */,
 				A8ECEC69242883A10066AE5F /* Personality.swift in Sources */,
 				A8ECEC65242874C00066AE5F /* ReadingRow.swift in Sources */,
 			);
