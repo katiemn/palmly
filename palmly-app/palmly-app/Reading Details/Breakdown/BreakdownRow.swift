@@ -21,12 +21,11 @@ struct BreakdownRow: View {
             
             HStack {
                 Text("\(Int(percentage * 100))%")
-                    .font(Font.system(size: 24))
-                    .fontWeight(.bold)
+                    .font(.custom("ZillaSlab-SemiBold", size: 30))
                     .padding(.trailing)
                 
                 Text(getReading(line: self.line, classification: self.classification))
-                .font(Font.custom("DMSans", size: 18))
+                    .font(.custom("DMSans-Regular", size: 18))
             }
             .padding(.leading)
             .padding(.trailing)

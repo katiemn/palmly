@@ -14,12 +14,12 @@ struct PersonalityCard: View {
     var body: some View {
         VStack(alignment: .leading) {
             Text(self.personality.title)
-            .font(Font.custom("DMSans", size: 36))
+            .font(.custom("DMSans-Regular", size: 36))
                 .padding(.leading)
             
             Text(self.personality.description)
             .lineLimit(3)
-            .font(Font.custom("DMSans", size: 18))
+            .font(Font.custom("DMSans-Regular", size: 20))
             .foregroundColor(descriptionGrey)
                 .fixedSize(horizontal: false, vertical: true)
                 .padding(.top)
@@ -29,7 +29,7 @@ struct PersonalityCard: View {
             
             HStack() {
                 Text("Learn More")
-                .font(Font.custom("DMSans", size: 16))
+                .font(Font.custom("DMSans-Regular", size: 20))
                 
                 Spacer()
                 

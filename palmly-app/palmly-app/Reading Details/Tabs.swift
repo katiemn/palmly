@@ -9,7 +9,9 @@
 import SwiftUI
 
 struct Tabs: View {
-    @ObservedObject var viewRouter: ViewRouter
+    @ObservedObject var viewRouter: ViewRouter;
+    var selectedTabFontSize: CGFloat = 26;
+    var tabFontSize: CGFloat = 20;
     
     var body: some View {
         let drag = DragGesture()
@@ -30,21 +32,21 @@ struct Tabs: View {
                 self.viewRouter.currentTab = 0
             }) {
                 Text("Breakdown")
-                    .font((self.viewRouter.currentTab == 0) ? .title : .subheadline)
+                    .font(.custom("ZillaSlab-SemiBold", size: self.viewRouter.currentTab == 0 ? self.selectedTabFontSize : self.tabFontSize))
             }
             
             Button(action: {
                 self.viewRouter.currentTab = 1
             }) {
                 Text("Personality")
-                .font((self.viewRouter.currentTab == 1) ? .title : .subheadline)
+                    .font(.custom("ZillaSlab-SemiBold", size: self.viewRouter.currentTab == 1 ? self.selectedTabFontSize : self.tabFontSize))
             }
             
             Button(action: {
                 self.viewRouter.currentTab = 2
             }) {
                 Text("Lifestyle")
-                .font((self.viewRouter.currentTab == 2) ? .title : .subheadline)
+                    .font(.custom("ZillaSlab-SemiBold", size: self.viewRouter.currentTab == 2 ? self.selectedTabFontSize : self.tabFontSize))
             }
         }
         .foregroundColor(Color.black)

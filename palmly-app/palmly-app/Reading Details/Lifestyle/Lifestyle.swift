@@ -39,9 +39,8 @@ struct Lifestyle: View {
                 Text(self.lifestyleTips[self.selected])
                     .fixedSize(horizontal: false, vertical: true)
                     .frame(width: geometry.size.width * 0.8)
-                    .font(Font.custom("DMSans", size: 24))
+                    .font(.custom("DMSans-Regular", size: 24))
                     .padding(geometry.size.width * 0.1)
-                    .lineSpacing(10)
                     
                 
                 Spacer()

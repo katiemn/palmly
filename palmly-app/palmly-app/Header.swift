@@ -28,11 +28,11 @@ struct Header: View {
                 .frame(width: 380, height: 5)
             
             Text(self.title)
-                .font(.title)
+                .font(.custom("ZillaSlab-SemiBold", size: 48))
             
             Rectangle()
             .fill(Color.white)
-            .frame(width: 380, height: 28)
+            .frame(width: 380, height: 10)
             
             Rectangle()
             .fill(topDividerGrey)
