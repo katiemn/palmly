@@ -27,17 +27,17 @@ struct PersonalityCard: View {
             
             Spacer()
             
-            HStack() {
-                Text("Learn More")
-                .font(Font.custom("DMSans-Regular", size: 20))
-                
-                Spacer()
-                
-                Image("right arrow")
-            }
-            .padding(.leading)
-            .padding(.trailing)
-            
+//            HStack() {
+//                Text("Learn More")
+//                .font(Font.custom("DMSans-Regular", size: 20))
+//                
+//                Spacer()
+//                
+//                Image("right arrow")
+//            }
+//            .padding(.leading)
+//            .padding(.trailing)
+//            
             Rectangle()
             .fill(topDividerGrey)
             .frame(width: 360, height: 2)
