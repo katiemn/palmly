@@ -1,0 +1,4 @@
+long curved
+long straight
+short
+splits
