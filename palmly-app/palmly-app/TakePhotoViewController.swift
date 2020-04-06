@@ -11,9 +11,9 @@ import Foundation
 
 class TakePhotoViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
-    @IBAction func unwindToTakePhoto(segue: UIStoryboardSegue) {}
     @IBOutlet weak var imagePicked: UIImageView!
     @IBOutlet weak var detectButton: UIButton!
+    @IBAction func unwindToTakePhoto(segue: UIStoryboardSegue) {}
     var imageData: NSData? = nil
 
     override func viewDidLoad() {
@@ -52,7 +52,11 @@ class TakePhotoViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        _ = segue.destination as! ReadingViewController
+        let readingViewController = segue.destination as! ReadingViewController
+        guard let buffer = CVImageBuffer.buffer(from: imagePicked.image!) else {
+          return
+        }
+        readingViewController.imageBuffer = buffer
     }
     
 }

@@ -12,16 +12,31 @@ class ReadingViewController: UIViewController, UITableViewDelegate, UITableViewD
     @IBOutlet weak var readingResultsTableView: UITableView!
     var resultsFromImage: [String] = ["", "", ""]
     var attributeData: [String] = ["Life", "Head", "Heart"]
-    
-    struct ResultData {
-        var att:String
-        var attValue:String
+    var imageBuffer: CVPixelBuffer?
+    private var heartResult: Result?
+    private var headResult: Result?
+    private var lifeResult: Result?
+    private var lifeReading: String = ""
+    private var headReading: String = ""
+    private var heartReading: String = ""
+    private var heartModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.heartModelInfo, labelsFileInfo: MobileNet.heartLabelsInfo)
+    private var lifeModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.lifeModelInfo, labelsFileInfo: MobileNet.lifeLabelsInfo)
+    private var headModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.headModelInfo, labelsFileInfo: MobileNet.headLabelsInfo)
+    @IBAction func goBackToPhoto(_ sender: Any) {
+        performSegue(withIdentifier: "unwindSegueToPhoto", sender: self)
     }
-    
-    var tableData: [ResultData] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        readingResultsTableView.delegate = self
+        readingResultsTableView.dataSource = self
+        heartResult = heartModelDataHandler?.runModel(onFrame: imageBuffer!)
+        heartReading = heartResult!.inferences[0].label
+        headResult = headModelDataHandler?.runModel(onFrame: imageBuffer!)
+        headReading = headResult!.inferences[0].label
+        lifeResult = lifeModelDataHandler?.runModel(onFrame: imageBuffer!)
+        lifeReading = lifeResult!.inferences[0].label
+        display(life: lifeReading, head: headReading, heart: heartReading)
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,33 +54,46 @@ class ReadingViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
-//    private func display(detectResults: DetectResult) {
-//        detectResult = detectResults.faces
-//        //what to return if no face is detected
-//        if (detectResult.count == 0) {
-//            resultsFromImage[0] = "None"
-//            resultsFromImage[1] = "None"
-//            resultsFromImage[2] = "None"
-//            detectResultsTableView.reloadData()
-//        } else {
-//            //loop through dictionary of emotions and only return if > 50%
-//            let feelings = detectResult[0].attributes.emotion
-//            let mirror = Mirror(reflecting: feelings)
-//            var strongestEmotions: String = ""
-//            for child in mirror.children {
-//                let value = child.value as? Float
-//                if (Float(50).isLess(than: value!)) {
-//                    strongestEmotions += child.label! + " "
-//                }
-//            }
-//            resultsFromImage[0] = (String(detectResult[0].attributes.age.value))
-//            resultsFromImage[1] = (detectResult[0].attributes.gender.value)
-//            resultsFromImage[2] = (strongestEmotions)
-//            face_token = detectResult[0].face_token
-//            facesetParams.face_token = detectResult[0].face_token
-//            detectResultsTableView.reloadData()
-//            api.faceset(with: facesetParams, then: storeInfo, fail: failureCallback ?? report)
-//        }
-//    }
-    
+    private func display(life: String, head: String, heart: String) {
+        switch life {
+        case "broken":
+            resultsFromImage[0] = "Each break in this line represents a traumatic experience that has had a significant impact on your life choices."
+        case "faint":
+            resultsFromImage[0] = "You may find it helpful to chill out now and then. For example, yoga, meditation, walking, or taking time for yourself could do you some good."
+        case "long":
+            resultsFromImage[0] = "You are a rock who people often count on to remain strong during difficult times."
+        case "short":
+            resultsFromImage[0] = "When life becomes overly stressful, remaining busy helps you feel safe and secure."
+        default:
+            resultsFromImage[0] = life
+        }
+        
+        switch head {
+        case "long curved":
+            resultsFromImage[1] = "You are a creative thinker who can image various possible outcomes or approaches to any given situation."
+        case "long straight":
+            resultsFromImage[1] = "You often find yourself pondering things in great detail, over and over before eventually coming to a decision."
+        case "short":
+            resultsFromImage[1] = "You are a quick thinker who reaches conclusions without any trouble, making you a very decisive individual."
+        case "splits":
+            resultsFromImage[1] = "You are very sensitive to others, meaning that you can very easily see someone else's perspective from their shoes. This means that you may change your opinion every now and then."
+        default:
+            resultsFromImage[1] = head
+        }
+        
+        switch heart {
+        case "long curved":
+            resultsFromImage[2] = "Your passions and desires drive you, and you are very upfront about that, making it known to anyone who will listen."
+        case "long straight":
+            resultsFromImage[2] = "You are a rational and analytic thinker who always considers the feelings of others. Those around you very much value you for this trait."
+        case "short curved":
+            resultsFromImage[2] = "You are a reserved person and prefer small groups to big gatherings. You tend to open up more in one-on-one scenarios."
+        case "short straight":
+            resultsFromImage[2] = "You are an individual that needs your freedom. In this regard, you show your love and affection through actions rather than words."
+        default:
+            resultsFromImage[2] = heart
+        }
+        
+        readingResultsTableView.reloadData()
+    }
 }

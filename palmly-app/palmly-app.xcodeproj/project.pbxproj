@@ -7,8 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		680DE547243A5AED000DC74B /* ModelDataHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680DE546243A5AED000DC74B /* ModelDataHandler.swift */; };
 		689717F824025CBC0093904D /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689717F724025CBC0093904D /* ReadingViewController.swift */; };
 		689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E4779240433E9004CC52A /* ReadingResultsTableViewCell.swift */; };
+		68B3A9BB243A641000F085AB /* CVPixelBufferExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B3A9BA243A641000F085AB /* CVPixelBufferExtension.swift */; };
+		68B3A9BD243A668300F085AB /* head_graph.lite in Resources */ = {isa = PBXBuildFile; fileRef = 68B3A9BC243A668300F085AB /* head_graph.lite */; };
+		68B3A9BF243A668F00F085AB /* head_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B3A9BE243A668F00F085AB /* head_labels.txt */; };
+		68B3A9C1243A66B500F085AB /* life_graph.lite in Resources */ = {isa = PBXBuildFile; fileRef = 68B3A9C0243A66B400F085AB /* life_graph.lite */; };
+		68B3A9C3243A66BD00F085AB /* life_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B3A9C2243A66BC00F085AB /* life_labels.txt */; };
+		68B3A9C5243A66D500F085AB /* heart_graph.lite in Resources */ = {isa = PBXBuildFile; fileRef = 68B3A9C4243A66D500F085AB /* heart_graph.lite */; };
+		68B3A9C7243A66DA00F085AB /* heart_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 68B3A9C6243A66DA00F085AB /* heart_labels.txt */; };
 		68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8501123FB79BA004D3832 /* AppDelegate.swift */; };
 		68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8501323FB79BA004D3832 /* SceneDelegate.swift */; };
 		68B8501623FB79BA004D3832 /* TakePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */; };
@@ -17,6 +25,7 @@
 		68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */; };
 		68B8502923FB79BD004D3832 /* palmly_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8502823FB79BD004D3832 /* palmly_appTests.swift */; };
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
+		BC9224D7A4C986505D1CD4AF /* Pods_palmly_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03B4844FBCB53755EA4FF0 /* Pods_palmly_app.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4463F83B076EAF29D4C4C612 /* Pods-palmly-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-palmly-app.release.xcconfig"; path = "Target Support Files/Pods-palmly-app/Pods-palmly-app.release.xcconfig"; sourceTree = "<group>"; };
+		680DE546243A5AED000DC74B /* ModelDataHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDataHandler.swift; sourceTree = "<group>"; };
 		689717F724025CBC0093904D /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
 		689E4779240433E9004CC52A /* ReadingResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingResultsTableViewCell.swift; sourceTree = "<group>"; };
+		68B3A9BA243A641000F085AB /* CVPixelBufferExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVPixelBufferExtension.swift; sourceTree = "<group>"; };
+		68B3A9BC243A668300F085AB /* head_graph.lite */ = {isa = PBXFileReference; lastKnownFileType = file; name = head_graph.lite; path = "../../../palmly_app/tensorflow-for-poets-2/tf_files/head/head_graph.lite"; sourceTree = "<group>"; };
+		68B3A9BE243A668F00F085AB /* head_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = head_labels.txt; path = "../../../palmly_app/tensorflow-for-poets-2/tf_files/head/head_labels.txt"; sourceTree = "<group>"; };
+		68B3A9C0243A66B400F085AB /* life_graph.lite */ = {isa = PBXFileReference; lastKnownFileType = file; name = life_graph.lite; path = "../../../palmly_app/tensorflow-for-poets-2/tf_files/life/tf_files/life_graph.lite"; sourceTree = "<group>"; };
+		68B3A9C2243A66BC00F085AB /* life_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = life_labels.txt; path = "../../../palmly_app/tensorflow-for-poets-2/tf_files/life/tf_files/life_labels.txt"; sourceTree = "<group>"; };
+		68B3A9C4243A66D500F085AB /* heart_graph.lite */ = {isa = PBXFileReference; lastKnownFileType = file; name = heart_graph.lite; path = "../../../palmly_app/tensorflow-for-poets-2/tf_files/heart/tf_files/heart_graph.lite"; sourceTree = "<group>"; };
+		68B3A9C6243A66DA00F085AB /* heart_labels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = heart_labels.txt; path = "../../../palmly_app/tensorflow-for-poets-2/tf_files/heart/tf_files/heart_labels.txt"; sourceTree = "<group>"; };
 		68B8500E23FB79BA004D3832 /* palmly-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "palmly-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B8501123FB79BA004D3832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		68B8501323FB79BA004D3832 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +71,8 @@
 		68B8502F23FB79BD004D3832 /* palmly-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "palmly-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFD9AD319E742F7D7C2B85D /* Pods-palmly-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-palmly-app.debug.xcconfig"; path = "Target Support Files/Pods-palmly-app/Pods-palmly-app.debug.xcconfig"; sourceTree = "<group>"; };
+		FA03B4844FBCB53755EA4FF0 /* Pods_palmly_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_palmly_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC9224D7A4C986505D1CD4AF /* Pods_palmly_app.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +108,8 @@
 				68B8502723FB79BD004D3832 /* palmly-appTests */,
 				68B8503223FB79BD004D3832 /* palmly-appUITests */,
 				68B8500F23FB79BA004D3832 /* Products */,
+				DE7B508A6B7FBCFEF5F3EFC3 /* Pods */,
+				E11D5C57B7594907211F01A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +135,14 @@
 				68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */,
 				68B8501F23FB79BC004D3832 /* Info.plist */,
 				689E4779240433E9004CC52A /* ReadingResultsTableViewCell.swift */,
+				680DE546243A5AED000DC74B /* ModelDataHandler.swift */,
+				68B3A9BA243A641000F085AB /* CVPixelBufferExtension.swift */,
+				68B3A9BC243A668300F085AB /* head_graph.lite */,
+				68B3A9BE243A668F00F085AB /* head_labels.txt */,
+				68B3A9C0243A66B400F085AB /* life_graph.lite */,
+				68B3A9C2243A66BC00F085AB /* life_labels.txt */,
+				68B3A9C4243A66D500F085AB /* heart_graph.lite */,
+				68B3A9C6243A66DA00F085AB /* heart_labels.txt */,
 			);
 			path = "palmly-app";
 			sourceTree = "<group>";
@@ -134,6 +165,23 @@
 			path = "palmly-appUITests";
 			sourceTree = "<group>";
 		};
+		DE7B508A6B7FBCFEF5F3EFC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9BFD9AD319E742F7D7C2B85D /* Pods-palmly-app.debug.xcconfig */,
+				4463F83B076EAF29D4C4C612 /* Pods-palmly-app.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E11D5C57B7594907211F01A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA03B4844FBCB53755EA4FF0 /* Pods_palmly_app.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -141,6 +189,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 68B8503823FB79BD004D3832 /* Build configuration list for PBXNativeTarget "palmly-app" */;
 			buildPhases = (
+				74A7D0BEFBB33F2151A80B6E /* [CP] Check Pods Manifest.lock */,
 				68B8500A23FB79BA004D3832 /* Sources */,
 				68B8500B23FB79BA004D3832 /* Frameworks */,
 				68B8500C23FB79BA004D3832 /* Resources */,
@@ -238,8 +287,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68B3A9BF243A668F00F085AB /* head_labels.txt in Resources */,
+				68B3A9C5243A66D500F085AB /* heart_graph.lite in Resources */,
 				68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */,
+				68B3A9C3243A66BD00F085AB /* life_labels.txt in Resources */,
+				68B3A9C7243A66DA00F085AB /* heart_labels.txt in Resources */,
+				68B3A9C1243A66B500F085AB /* life_graph.lite in Resources */,
 				68B8501B23FB79BC004D3832 /* Assets.xcassets in Resources */,
+				68B3A9BD243A668300F085AB /* head_graph.lite in Resources */,
 				68B8501923FB79BA004D3832 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,13 +315,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		74A7D0BEFBB33F2151A80B6E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-palmly-app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		68B8500A23FB79BA004D3832 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				68B8501623FB79BA004D3832 /* TakePhotoViewController.swift in Sources */,
+				68B3A9BB243A641000F085AB /* CVPixelBufferExtension.swift in Sources */,
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
+				680DE547243A5AED000DC74B /* ModelDataHandler.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
@@ -440,9 +522,11 @@
 		};
 		68B8503923FB79BD004D3832 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BFD9AD319E742F7D7C2B85D /* Pods-palmly-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9V6BPKL7B;
 				INFOPLIST_FILE = "palmly-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,9 +541,11 @@
 		};
 		68B8503A23FB79BD004D3832 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4463F83B076EAF29D4C4C612 /* Pods-palmly-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D9V6BPKL7B;
 				INFOPLIST_FILE = "palmly-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
