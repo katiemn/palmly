@@ -31,8 +31,6 @@
 		A8ECEC69242883A10066AE5F /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC68242883A10066AE5F /* Personality.swift */; };
 		A8ECEC6B242883B40066AE5F /* Lifestyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC6A242883B40066AE5F /* Lifestyle.swift */; };
 		A8ECEC6D242883EC0066AE5F /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8ECEC6C242883EC0066AE5F /* Tabs.swift */; };
-		A8FB22EA24295DEF006E1082 /* Zilla_Slab in Resources */ = {isa = PBXBuildFile; fileRef = A8FB22E924295DEF006E1082 /* Zilla_Slab */; };
-		A8FB22EC24295DF9006E1082 /* DM_Sans in Resources */ = {isa = PBXBuildFile; fileRef = A8FB22EB24295DF9006E1082 /* DM_Sans */; };
 		A8FB22F0242960A9006E1082 /* PercentageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB22EF242960A9006E1082 /* PercentageBar.swift */; };
 		A8FB22F324296A59006E1082 /* BreakdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB22F224296A59006E1082 /* BreakdownRow.swift */; };
 		A8FB22F524296B54006E1082 /* ReadingFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FB22F424296B54006E1082 /* ReadingFuncs.swift */; };
@@ -73,6 +71,8 @@
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A81C9E2F2429EE53005946F6 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		A8682D94244D2C2000D4B201 /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "DMSans-Regular.ttf"; path = "../../../../../../Downloads/DM_Sans/DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		A8682D95244D2C4300D4B201 /* ZillaSlab-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "ZillaSlab-SemiBold.ttf"; path = "../../../../../Zilla_Slab/ZillaSlab-SemiBold.ttf"; sourceTree = "<group>"; };
 		A874EAFB24316B6800236E73 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		A88C52C2243303FC0008150F /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		A88C52C6243307B60008150F /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
@@ -86,8 +86,6 @@
 		A8ECEC68242883A10066AE5F /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
 		A8ECEC6A242883B40066AE5F /* Lifestyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifestyle.swift; sourceTree = "<group>"; };
 		A8ECEC6C242883EC0066AE5F /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
-		A8FB22E924295DEF006E1082 /* Zilla_Slab */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Zilla_Slab; sourceTree = "<group>"; };
-		A8FB22EB24295DF9006E1082 /* DM_Sans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DM_Sans; sourceTree = "<group>"; };
 		A8FB22EF242960A9006E1082 /* PercentageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageBar.swift; sourceTree = "<group>"; };
 		A8FB22F224296A59006E1082 /* BreakdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownRow.swift; sourceTree = "<group>"; };
 		A8FB22F424296B54006E1082 /* ReadingFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingFuncs.swift; sourceTree = "<group>"; };
@@ -200,8 +198,8 @@
 		A8FB22E824295C6A006E1082 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				A8FB22EB24295DF9006E1082 /* DM_Sans */,
-				A8FB22E924295DEF006E1082 /* Zilla_Slab */,
+				A8682D95244D2C4300D4B201 /* ZillaSlab-SemiBold.ttf */,
+				A8682D94244D2C2000D4B201 /* DMSans-Regular.ttf */,
 				A8E117AA2428923B001EF8C8 /* Globals.swift */,
 			);
 			path = Resources;
@@ -345,9 +343,7 @@
 			files = (
 				68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */,
 				68B8501B23FB79BC004D3832 /* Assets.xcassets in Resources */,
-				A8FB22EC24295DF9006E1082 /* DM_Sans in Resources */,
 				68B8501923FB79BA004D3832 /* Main.storyboard in Resources */,
-				A8FB22EA24295DEF006E1082 /* Zilla_Slab in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
