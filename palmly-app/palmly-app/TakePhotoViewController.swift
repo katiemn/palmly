@@ -52,7 +52,7 @@ class TakePhotoViewController: UIViewController, UIImagePickerControllerDelegate
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        _ = segue.destination as! ReadingViewController
+        _ = segue.destination as! ReadingView
     }
     
 }

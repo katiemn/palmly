@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		689717F824025CBC0093904D /* ReadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689717F724025CBC0093904D /* ReadingViewController.swift */; };
+		689717F824025CBC0093904D /* ReadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689717F724025CBC0093904D /* ReadingView.swift */; };
 		689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E4779240433E9004CC52A /* ReadingResultsTableViewCell.swift */; };
 		68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8501123FB79BA004D3832 /* AppDelegate.swift */; };
 		68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8501323FB79BA004D3832 /* SceneDelegate.swift */; };
@@ -54,7 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		689717F724025CBC0093904D /* ReadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingViewController.swift; sourceTree = "<group>"; };
+		689717F724025CBC0093904D /* ReadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingView.swift; sourceTree = "<group>"; };
 		689E4779240433E9004CC52A /* ReadingResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingResultsTableViewCell.swift; sourceTree = "<group>"; };
 		68B8500E23FB79BA004D3832 /* palmly-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "palmly-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		68B8501123FB79BA004D3832 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -220,7 +220,7 @@
 		A8FB22EE2429605D006E1082 /* Reading View */ = {
 			isa = PBXGroup;
 			children = (
-				689717F724025CBC0093904D /* ReadingViewController.swift */,
+				689717F724025CBC0093904D /* ReadingView.swift */,
 				A8ECEC64242874C00066AE5F /* ReadingRow.swift */,
 				A8FB22F424296B54006E1082 /* ReadingFuncs.swift */,
 			);
@@ -384,7 +384,7 @@
 				A88DCAEF242DA6CC00887088 /* PersonalityCard.swift in Sources */,
 				A8FB22F0242960A9006E1082 /* PercentageBar.swift in Sources */,
 				A88DCAF3242DC03700887088 /* PersonalityShareable.swift in Sources */,
-				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
+				689717F824025CBC0093904D /* ReadingView.swift in Sources */,
 				A88C52C3243303FC0008150F /* MotherView.swift in Sources */,
 				A81C9E302429EE53005946F6 /* DetailsView.swift in Sources */,
 				A89013132431D3F900B8B5BC /* ImagePicker.swift in Sources */,

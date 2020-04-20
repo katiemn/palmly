@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct ReadingViewController: View {
+struct ReadingView: View {
     @ObservedObject var viewRouter: ViewRouter
     
     var userReadings: [String]
@@ -40,9 +40,9 @@ struct ReadingViewController: View {
         }
 }
 
-struct ReadingViewController_Previews: PreviewProvider {
+struct ReadingView_Previews: PreviewProvider {
     static var previews: some View {
-        ReadingViewController(viewRouter: ViewRouter(), userReadings: ["short", "long, curved", "splits"])
+        ReadingView(viewRouter: ViewRouter(), userReadings: ["short", "long, curved", "splits"])
     }
 }
 
