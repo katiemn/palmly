@@ -31,16 +31,14 @@ struct TakePhoto: View {
     }
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             Color.black
             .edgesIgnoringSafeArea(.top)
             .edgesIgnoringSafeArea(.bottom)
             
             image?.resizable()
-            .frame(maxWidth: .infinity, maxHeight:
-                .infinity, alignment: .center)
-                .edgesIgnoringSafeArea(.top)
-                .edgesIgnoringSafeArea(.bottom)
+                .aspectRatio(contentMode: .fit)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
                         
             HStack(spacing: 85) {
                 Button(action: {
@@ -64,7 +62,7 @@ struct TakePhoto: View {
                 }
                 .foregroundColor(Color.white)
             }
-            .offset(y: 320)
+            .padding(.bottom)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
             ImagePicker(image: self.$inputImage, pickerSourceIsCamera: self.$pickerSourceIsCamera)

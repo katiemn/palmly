@@ -14,29 +14,33 @@ struct Header: View {
     @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Button(action: {
-                if self.viewRouter.currentPage > 0 {
-                    self.viewRouter.currentPage -= 1
-                }
-                }) {
-                Image("left arrow")
+        VStack(alignment: .center) {
+            Button(
+                action: {
+                    if self.viewRouter.currentPage > 0 {
+                        self.viewRouter.currentPage -= 1
+                    }
+                })
+            {
+                Image("back arrow").resizable()
                     .foregroundColor(Color.black)
+                    .frame(width: 30, height: 30)
             }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            
             Rectangle()
                 .fill(Color.black)
-                .frame(width: 380, height: 5)
+                .frame(height: 5)
 
             Text(self.title)
-                .font(.custom("ZillaSlab-SemiBold", size: 48))
+                .font(.custom("ZillaSlab-SemiBold", size: 40))
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.bottom)
+                .padding(.leading)
 
             Rectangle()
-            .fill(Color.white)
-            .frame(width: 380, height: 10)
-
-            Rectangle()
-            .fill(topDividerGrey)
-            .frame(width: 380, height: 2)
+                .fill(Color.gray)
+                .frame(height: 2)
         }
     }
 }

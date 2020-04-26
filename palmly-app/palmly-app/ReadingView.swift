@@ -20,25 +20,25 @@ struct ReadingView: View {
     
     var body: some View {
         VStack {
-//                Header(title: "Your Reading", viewRouter: self.viewRouter)
+            Header(title: "Your Reading", viewRouter: self.viewRouter)
+            Spacer()
+            
             if (self.viewRouter.readings.count > 0) {
-                GeometryReader { geometry in
-
                     VStack(alignment: .leading) {
                         ForEach((0 ..< self.viewRouter.lines.count), id: \.self) { lineIndex in
                             Button(action: { self.viewRouter.currentPage += 1; self.viewRouter.currentLineIndex = lineIndex}) {
                                 ReadingRow(line: self.viewRouter.lines[lineIndex], meaning: self.meanings[lineIndex])
                             }
+                            .foregroundColor(Color.black)
                         }
                     }
                     .navigationBarTitle(Text("Your Reading"))
                     .navigationBarBackButtonHidden(true)
-                }
-                .foregroundColor(.black)
             } else {
                 Text("hey there")
             }
         }
+        .padding()
         .onAppear {
             self.viewRouter.results.append( self.lifeModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!) as! Result)
             self.viewRouter.results.append( self.headModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!) as! Result)
@@ -48,11 +48,6 @@ struct ReadingView: View {
                 self.viewRouter.readings.append(self.viewRouter.results[i].inferences[i].label)
                 self.meanings.append(getReading(line: self.viewRouter.lines[i], classification: self.viewRouter.readings[i]))
             }
-            print("READINGS")
-            print(self.viewRouter.readings)
-            
-            print("MEANINGS")
-            print(self.meanings)
         }
     }
     

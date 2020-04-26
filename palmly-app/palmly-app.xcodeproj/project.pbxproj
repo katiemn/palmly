@@ -32,6 +32,7 @@
 		A8DB617024562BF700A5E15F /* MotherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB616F24562BF700A5E15F /* MotherView.swift */; };
 		A8DB617224562FEE00A5E15F /* ReadingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB617124562FEE00A5E15F /* ReadingRow.swift */; };
 		A8DB61742456300800A5E15F /* ReadingFuncs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB61732456300800A5E15F /* ReadingFuncs.swift */; };
+		A8DB617824563CAE00A5E15F /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB617724563CAD00A5E15F /* Header.swift */; };
 		BC9224D7A4C986505D1CD4AF /* Pods_palmly_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA03B4844FBCB53755EA4FF0 /* Pods_palmly_app.framework */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +87,7 @@
 		A8DB616F24562BF700A5E15F /* MotherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotherView.swift; sourceTree = "<group>"; };
 		A8DB617124562FEE00A5E15F /* ReadingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingRow.swift; sourceTree = "<group>"; };
 		A8DB61732456300800A5E15F /* ReadingFuncs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadingFuncs.swift; sourceTree = "<group>"; };
+		A8DB617724563CAD00A5E15F /* Header.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		FA03B4844FBCB53755EA4FF0 /* Pods_palmly_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_palmly_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 		68B8501023FB79BA004D3832 /* palmly-app */ = {
 			isa = PBXGroup;
 			children = (
+				A8DB617724563CAD00A5E15F /* Header.swift */,
 				68B8501123FB79BA004D3832 /* AppDelegate.swift */,
 				68B8501323FB79BA004D3832 /* SceneDelegate.swift */,
 				68B8501523FB79BA004D3832 /* TakePhotoViewController.swift */,
@@ -376,6 +379,7 @@
 				689E477A240433E9004CC52A /* ReadingResultsTableViewCell.swift in Sources */,
 				A8DB616C2456237B00A5E15F /* ViewRouter.swift in Sources */,
 				680DE547243A5AED000DC74B /* ModelDataHandler.swift in Sources */,
+				A8DB617824563CAE00A5E15F /* Header.swift in Sources */,
 				A8DB61742456300800A5E15F /* ReadingFuncs.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,

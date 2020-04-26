@@ -15,25 +15,22 @@ struct ReadingRow: View {
     
     
     var body: some View {
-        GeometryReader { geometry in
-            VStack(alignment: .leading) {
-                Text(self.line)
-                    .font(Font.custom("DMSans", size: 36))
-                    .padding()
-                Text(self.meaning)
-                    .font(Font.custom("DMSans", size: 18))
-                    .padding(.leading)
-                    .padding(.trailing)
-            }
-            .frame(width: geometry.size.width,
-                height: nil,
-                alignment: .topLeading)
+        VStack(alignment: .leading) {
+            Text(self.line)
+                .font(Font.custom("DMSans", size: 36))
+                .padding()
+            Text(self.meaning)
+                .font(Font.custom("DMSans", size: 18))
+                .padding(.leading)
+                .padding(.trailing)
         }
+        .frame(alignment: .topLeading)
+        .padding(.bottom)
     }
 }
 
 struct ReadingRow_Previews: PreviewProvider {
     static var previews: some View {
-        ReadingRow(line: "Heart", meaning: "long")
+        ReadingRow(line: "Heart", meaning: "sldkfjsldkf sldkfjsdkf ekjef lefflkewjf efjefklwfkje felkfjwek. welfkjwlfkjew ejfkefje felfkjefe ek")
     }
 }
