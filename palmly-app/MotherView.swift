@@ -10,22 +10,21 @@ import SwiftUI
 
 struct MotherView: View {
     
-//    @ObservedObject var viewRouter = ViewRouter()
+    @ObservedObject var viewRouter = ViewRouter()
     
     var body: some View {
-        Text("hello there")
-//        VStack {
-//            if (self.viewRouter.currentPage == 0) {
-//                TakePhoto(viewRouter: self.viewRouter)
-//            } else if (self.viewRouter.currentPage == 1) {
-//                ReadingView(viewRouter: self.viewRouter, userReadings: ["short", "long, curved", "splits"])
-//            } else {
-//                DetailsView(viewRouter: self.viewRouter, line: "Life",
-//                topReadings: testTopReadings,
-//                personalityObjects: testPersonalityObjects,
-//                lifestyleTips: testLifestyleTips)
-//            }
-//        }
+        VStack {
+            if (self.viewRouter.currentPage == 0) {
+                TakePhoto(viewRouter: self.viewRouter)
+            } else if (self.viewRouter.currentPage == 1) {
+                ReadingView(viewRouter: self.viewRouter, userReadings: ["short", "long, curved", "splits"])
+            } else {
+                DetailsView(viewRouter: self.viewRouter, line: "Life",
+                topReadings: testTopReadings,
+                personalityObjects: testPersonalityObjects,
+                lifestyleTips: testLifestyleTips)
+            }
+        }
     }
 }
 
