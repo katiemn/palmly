@@ -16,10 +16,12 @@ struct TakePhoto: View {
     @State private var pickerSourceIsCamera = false
     @State private var inputImage: UIImage?
     @State private var image: Image?
+    @State private var getReadingButtonDisabled = true
     
     func loadImage() {
         guard let inputImage = inputImage else { return }
         image = Image(uiImage: inputImage)
+        self.getReadingButtonDisabled = false
     }
     
     var body: some View {
@@ -40,10 +42,13 @@ struct TakePhoto: View {
                 }) {
                     Image("upload image")
                 }
+                .foregroundColor(Color.white)
                 
                 Button(action: { self.viewRouter.currentPage += 1}) {
                     Image("temp get reading")
                 }
+                .disabled(getReadingButtonDisabled)
+                .foregroundColor(getReadingButtonDisabled ? Color.gray : Color.white)
    
                 Button(action: {
                     self.pickerSourceIsCamera = true
@@ -51,8 +56,8 @@ struct TakePhoto: View {
                 }) {
                     Image("temp camera button")
                 }
+                .foregroundColor(Color.white)
             }
-            .foregroundColor(Color.white)
             .offset(y: 320)
         }
         .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
