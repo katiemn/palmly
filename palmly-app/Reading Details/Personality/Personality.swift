@@ -15,110 +15,54 @@ struct Personality: View {
     @State var personalityType: Int = 0
     @State var headlines: [String] = []
     @State var article: String = ""
-//    var personalityObjects: [PersonalityObject]
-    @State var showPersonalityShare = false
-//    @State private var personalityShareObj = PersonalityObject(id: 0, title: "", description: "", link: "")
+    @State var showArticle = false
     
     var body: some View {
-//        let drag = DragGesture()
-//            .onEnded {
-//                if $0.translation.width > 100 {
-//                    self.showPersonalityShare = false
-//                }
-//        }
+        let drag = DragGesture()
+            .onEnded {
+                if $0.translation.width > 100 {
+                    self.showArticle = false
+                }
+        }
         
-        VStack(alignment: .leading) {
+        return VStack(alignment: .leading) {
             
-            if (!showPersonalityShare) {
-                if self.headlines.count == 1 {
-                    Text("Enneagram Type " + String(self.personalityType))
-                    .font(Font.custom("DMSans", size: 26))
+            if (!self.showArticle && self.headlines.count > 1) {
+                Text("Enneagram Type " + String(self.personalityType))
+                .font(Font.custom("DMSans", size: 26))
 
-                    Button(action: {self.showPersonalityShare = true}) {
+                    Button(action: {self.showArticle = true}) {
                         Text("Learn More")
                         .font(Font.custom("DMSans", size: 18))
                             .foregroundColor(Color.gray)
                     }
-                    Spacer()
 
-                    Text(self.headlines[0])
-                    .font(Font.custom("DMSans", size: 18))
+                Spacer()
 
-                    Spacer()
-                } else {
-                    Text("Enneagram Type " + String(self.personalityType))
-                    .font(Font.custom("DMSans", size: 26))
-                    
-                    Spacer()
-                    
-                    ForEach((0 ..< self.headlines.count), id: \.self) {index in
-                        Button(action: {
-                            self.showPersonalityShare = true
-                        }) {
-                            if (index % 2 == 0) {
-                                Spacer()
-                                Text(self.headlines[index])
-                                .font(Font.custom("DMSans", size: 18))
-//                                .frame(alignment: .leading)
-                                
-                                Spacer()
-                            } else {
-                                Spacer()
-                                Text(self.headlines[index])
-                                .font(Font.custom("DMSans", size: 18))
-//                                    .frame(alignment: .trailing)
-                                
-                                Spacer()
-                            }
-                        }
-                        .foregroundColor(Color.black)
+                ForEach( self.headlines, id: \.self) {headline in
+                    VStack {
+                        Text(headline)
+                        .font(Font.custom("DMSans", size: 18))
+
+                        Spacer()
                     }
                 }
-                    
             } else {
                 Spacer()
                 
                 Text("Enneagram Type " + String(self.personalityType))
                 .font(Font.custom("DMSans", size: 26))
-//                Button(action: {self.showPersonalityShare = true}) {
-//                    Text("Learn More")
-//                    .font(Font.custom("DMSans", size: 18))
-//                        .foregroundColor(Color.gray)
-//                }
+                // TODO add links?
+                Spacer()
+                ScrollView {
+                    Text(self.article)
+                    .font(Font.custom("DMSans", size: 18))
+                        .lineSpacing(10)
+                        .padding()
+                }
                 
                 Spacer()
-                
-                Text(self.article)
-                .font(Font.custom("DMSans", size: 18))
-                    .lineSpacing(10)
-                    .padding()
-                
-                Spacer()
-
             }
-//            if (!showPersonalityShare) {
-//                ForEach(personalityObjects, id: \.id) {personalityObj in
-//                    Button(action: {
-//                        self.personalityShareObj = personalityObj
-//                        self.showPersonalityShare = true
-//                    }) {
-//                        PersonalityCard(personality: personalityObj)
-//                    }
-//                }
-//            } else {
-//                Button(action: {self.showPersonalityShare = false}) {
-//                    VStack {
-//                        Spacer()
-//
-//                        Text(self.personalityShareObj.description)
-//                            .font(.title)
-//                            .foregroundColor(Color.black)
-//
-//                        Spacer()
-//                    }
-//                .gesture(drag)
-//                }
-//            }
         }
         .onAppear() {
             self.personalityType = self.getPersonalityType(line: self.viewRouter.lines[self.viewRouter.currentLineIndex], classification: self.viewRouter.readings[self.viewRouter.currentLineIndex])
