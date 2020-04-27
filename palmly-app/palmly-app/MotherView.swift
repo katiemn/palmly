@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MotherView: View {
     
-    @ObservedObject var viewRouter = ViewRouter()
+    @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
         VStack {
@@ -18,19 +18,15 @@ struct MotherView: View {
                 TakePhoto(viewRouter: self.viewRouter)
             } else if (self.viewRouter.currentPage == 1) {
                 ReadingView(viewRouter: self.viewRouter)
+            } else {
+                DetailsView(viewRouter: self.viewRouter)
             }
-//            } else {
-//                DetailsView(viewRouter: self.viewRouter, line: "Life",
-//                topReadings: testTopReadings,
-//                personalityObjects: testPersonalityObjects,
-//                lifestyleTips: testLifestyleTips)
-//            }
         }
     }
 }
 
 struct MotherView_Previews: PreviewProvider {
     static var previews: some View {
-        MotherView()
+        MotherView(viewRouter: ViewRouter())
     }
 }

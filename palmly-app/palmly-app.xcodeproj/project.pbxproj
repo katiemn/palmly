@@ -25,6 +25,17 @@
 		68B8501E23FB79BC004D3832 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */; };
 		68B8502923FB79BD004D3832 /* palmly_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8502823FB79BD004D3832 /* palmly_appTests.swift */; };
 		68B8503423FB79BD004D3832 /* palmly_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68B8503323FB79BD004D3832 /* palmly_appUITests.swift */; };
+		A80C7B8A24566B57008D459A /* ZillaSlab-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80C7B8924566B57008D459A /* ZillaSlab-SemiBold.ttf */; };
+		A80C7B8C24566B7E008D459A /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80C7B8B24566B7E008D459A /* DMSans-Regular.ttf */; };
+		A83FBB21245696830048BC17 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB152456967E0048BC17 /* DetailsView.swift */; };
+		A83FBB22245696870048BC17 /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB172456967E0048BC17 /* Personality.swift */; };
+		A83FBB23245696890048BC17 /* PersonalityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB182456967E0048BC17 /* PersonalityCard.swift */; };
+		A83FBB242456968B0048BC17 /* PersonalityShareable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB192456967E0048BC17 /* PersonalityShareable.swift */; };
+		A83FBB25245696900048BC17 /* PercentageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1B2456967E0048BC17 /* PercentageBar.swift */; };
+		A83FBB26245696900048BC17 /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1C2456967E0048BC17 /* Breakdown.swift */; };
+		A83FBB27245696900048BC17 /* BreakdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1D2456967E0048BC17 /* BreakdownRow.swift */; };
+		A83FBB28245696930048BC17 /* Tabs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB202456967E0048BC17 /* Tabs.swift */; };
+		A83FBB29245696960048BC17 /* Lifestyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1F2456967E0048BC17 /* Lifestyle.swift */; };
 		A8DB616624561EA900A5E15F /* TakePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB616524561EA900A5E15F /* TakePhoto.swift */; };
 		A8DB616A2456229D00A5E15F /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB61692456229D00A5E15F /* ImagePicker.swift */; };
 		A8DB616C2456237B00A5E15F /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DB616B2456237B00A5E15F /* ViewRouter.swift */; };
@@ -80,6 +91,17 @@
 		68B8503323FB79BD004D3832 /* palmly_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = palmly_appUITests.swift; sourceTree = "<group>"; };
 		68B8503523FB79BD004D3832 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFD9AD319E742F7D7C2B85D /* Pods-palmly-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-palmly-app.debug.xcconfig"; path = "Target Support Files/Pods-palmly-app/Pods-palmly-app.debug.xcconfig"; sourceTree = "<group>"; };
+		A80C7B8924566B57008D459A /* ZillaSlab-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ZillaSlab-SemiBold.ttf"; sourceTree = "<group>"; };
+		A80C7B8B24566B7E008D459A /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
+		A83FBB152456967E0048BC17 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		A83FBB172456967E0048BC17 /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
+		A83FBB182456967E0048BC17 /* PersonalityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityCard.swift; sourceTree = "<group>"; };
+		A83FBB192456967E0048BC17 /* PersonalityShareable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityShareable.swift; sourceTree = "<group>"; };
+		A83FBB1B2456967E0048BC17 /* PercentageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageBar.swift; sourceTree = "<group>"; };
+		A83FBB1C2456967E0048BC17 /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
+		A83FBB1D2456967E0048BC17 /* BreakdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownRow.swift; sourceTree = "<group>"; };
+		A83FBB1F2456967E0048BC17 /* Lifestyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifestyle.swift; sourceTree = "<group>"; };
+		A83FBB202456967E0048BC17 /* Tabs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabs.swift; sourceTree = "<group>"; };
 		A8DB616524561EA900A5E15F /* TakePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakePhoto.swift; sourceTree = "<group>"; };
 		A8DB61692456229D00A5E15F /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		A8DB616B2456237B00A5E15F /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
@@ -120,6 +142,7 @@
 		68B8500523FB79BA004D3832 = {
 			isa = PBXGroup;
 			children = (
+				A83FBB142456967E0048BC17 /* Reading Details */,
 				68B8501023FB79BA004D3832 /* palmly-app */,
 				68B8502723FB79BD004D3832 /* palmly-appTests */,
 				68B8503223FB79BD004D3832 /* palmly-appUITests */,
@@ -142,6 +165,9 @@
 		68B8501023FB79BA004D3832 /* palmly-app */ = {
 			isa = PBXGroup;
 			children = (
+				A8DB616F24562BF700A5E15F /* MotherView.swift */,
+				A80C7B8B24566B7E008D459A /* DMSans-Regular.ttf */,
+				A80C7B8924566B57008D459A /* ZillaSlab-SemiBold.ttf */,
 				A8DB617724563CAD00A5E15F /* Header.swift */,
 				68B8501123FB79BA004D3832 /* AppDelegate.swift */,
 				68B8501323FB79BA004D3832 /* SceneDelegate.swift */,
@@ -151,7 +177,6 @@
 				A8DB616D2456241B00A5E15F /* ReadingView.swift */,
 				A8DB617124562FEE00A5E15F /* ReadingRow.swift */,
 				A8DB61732456300800A5E15F /* ReadingFuncs.swift */,
-				A8DB616F24562BF700A5E15F /* MotherView.swift */,
 				68B8501723FB79BA004D3832 /* Main.storyboard */,
 				68B8501A23FB79BC004D3832 /* Assets.xcassets */,
 				68B8501C23FB79BC004D3832 /* LaunchScreen.storyboard */,
@@ -187,6 +212,46 @@
 				68B8503523FB79BD004D3832 /* Info.plist */,
 			);
 			path = "palmly-appUITests";
+			sourceTree = "<group>";
+		};
+		A83FBB142456967E0048BC17 /* Reading Details */ = {
+			isa = PBXGroup;
+			children = (
+				A83FBB152456967E0048BC17 /* DetailsView.swift */,
+				A83FBB162456967E0048BC17 /* Personality */,
+				A83FBB1A2456967E0048BC17 /* Breakdown */,
+				A83FBB1E2456967E0048BC17 /* Lifestyle */,
+				A83FBB202456967E0048BC17 /* Tabs.swift */,
+			);
+			path = "Reading Details";
+			sourceTree = "<group>";
+		};
+		A83FBB162456967E0048BC17 /* Personality */ = {
+			isa = PBXGroup;
+			children = (
+				A83FBB172456967E0048BC17 /* Personality.swift */,
+				A83FBB182456967E0048BC17 /* PersonalityCard.swift */,
+				A83FBB192456967E0048BC17 /* PersonalityShareable.swift */,
+			);
+			path = Personality;
+			sourceTree = "<group>";
+		};
+		A83FBB1A2456967E0048BC17 /* Breakdown */ = {
+			isa = PBXGroup;
+			children = (
+				A83FBB1B2456967E0048BC17 /* PercentageBar.swift */,
+				A83FBB1C2456967E0048BC17 /* Breakdown.swift */,
+				A83FBB1D2456967E0048BC17 /* BreakdownRow.swift */,
+			);
+			path = Breakdown;
+			sourceTree = "<group>";
+		};
+		A83FBB1E2456967E0048BC17 /* Lifestyle */ = {
+			isa = PBXGroup;
+			children = (
+				A83FBB1F2456967E0048BC17 /* Lifestyle.swift */,
+			);
+			path = Lifestyle;
 			sourceTree = "<group>";
 		};
 		DE7B508A6B7FBCFEF5F3EFC3 /* Pods */ = {
@@ -317,8 +382,10 @@
 				68B3A9C3243A66BD00F085AB /* life_labels.txt in Resources */,
 				68B3A9C7243A66DA00F085AB /* heart_labels.txt in Resources */,
 				68B3A9C1243A66B500F085AB /* life_graph.lite in Resources */,
+				A80C7B8A24566B57008D459A /* ZillaSlab-SemiBold.ttf in Resources */,
 				68B8501B23FB79BC004D3832 /* Assets.xcassets in Resources */,
 				68B3A9BD243A668300F085AB /* head_graph.lite in Resources */,
+				A80C7B8C24566B7E008D459A /* DMSans-Regular.ttf in Resources */,
 				68B8501923FB79BA004D3832 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,10 +436,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83FBB22245696870048BC17 /* Personality.swift in Sources */,
+				A83FBB25245696900048BC17 /* PercentageBar.swift in Sources */,
 				68B8501623FB79BA004D3832 /* TakePhotoViewController.swift in Sources */,
+				A83FBB29245696960048BC17 /* Lifestyle.swift in Sources */,
 				A8DB617024562BF700A5E15F /* MotherView.swift in Sources */,
+				A83FBB27245696900048BC17 /* BreakdownRow.swift in Sources */,
+				A83FBB242456968B0048BC17 /* PersonalityShareable.swift in Sources */,
 				A8DB616624561EA900A5E15F /* TakePhoto.swift in Sources */,
 				68B3A9BB243A641000F085AB /* CVPixelBufferExtension.swift in Sources */,
+				A83FBB26245696900048BC17 /* Breakdown.swift in Sources */,
 				A8DB616E2456241B00A5E15F /* ReadingView.swift in Sources */,
 				A8DB617224562FEE00A5E15F /* ReadingRow.swift in Sources */,
 				A8DB616A2456229D00A5E15F /* ImagePicker.swift in Sources */,
@@ -382,7 +455,10 @@
 				A8DB617824563CAE00A5E15F /* Header.swift in Sources */,
 				A8DB61742456300800A5E15F /* ReadingFuncs.swift in Sources */,
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
+				A83FBB21245696830048BC17 /* DetailsView.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
+				A83FBB23245696890048BC17 /* PersonalityCard.swift in Sources */,
+				A83FBB28245696930048BC17 /* Tabs.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

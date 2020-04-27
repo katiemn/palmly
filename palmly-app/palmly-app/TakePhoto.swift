@@ -39,6 +39,27 @@ struct TakePhoto: View {
             image?.resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            
+            if (image == nil) {
+                VStack {
+                    Text("Get Your Palm Reading")
+                        .padding(.bottom)
+                        .padding(.bottom)
+
+                    .font(.custom("ZillaSlab-SemiBold", size: 35))
+
+                    Text("Take a picture of your left palm or upload an image from your camera roll")
+                    .font(.custom("DMSans-Regular", size: 25))
+
+                }
+                
+                .font(.custom("DMSans-Regular", size: 30))
+                .foregroundColor(Color.white)
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                .padding()
+                .multilineTextAlignment(.center)
+
+            }
                         
             HStack(spacing: 85) {
                 Button(action: {

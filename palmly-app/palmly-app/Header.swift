@@ -35,7 +35,6 @@ struct Header: View {
             Text(self.title)
                 .font(.custom("ZillaSlab-SemiBold", size: 40))
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.bottom)
                 .padding(.leading)
 
             Rectangle()

@@ -15,7 +15,7 @@ struct ReadingView: View {
     var lifeModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.lifeModelInfo, labelsFileInfo: MobileNet.lifeLabelsInfo)
     var headModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.headModelInfo, labelsFileInfo: MobileNet.headLabelsInfo)
     
-    @State var meanings: [String] = []
+    @State var meanings: [String] = ["", "", ""]
     
     
     var body: some View {
@@ -46,7 +46,7 @@ struct ReadingView: View {
             
             for i in 0 ..< self.viewRouter.lines.count {
                 self.viewRouter.readings.append(self.viewRouter.results[i].inferences[i].label)
-                self.meanings.append(getReading(line: self.viewRouter.lines[i], classification: self.viewRouter.readings[i]))
+                self.meanings[i] = getReading(line: self.viewRouter.lines[i], classification: self.viewRouter.readings[i])
             }
         }
     }

@@ -13,7 +13,6 @@ func getHeadReading(classification: String) -> String {
         "splits": "Sensitive to others, you can easily see someone else’s perspective. This means you may change your opinion now and then.",
         "long curved": "You’re a creative thinker who can imagine many possible outcomes or approaches to any situation."
     ]
-    print("We made it here")
     return readings[classification]!
 }
 
@@ -26,7 +25,6 @@ func getHeartReading(classification: String) -> String {
         "xs": "You’ve experienced a deep personal betrayal.",
         "splits": "You have a habit of putting your emotions on the back burner to meet others’ needs."
     ]
-    print("We made it to heart")
     return readings[classification]!
 }
 
@@ -37,7 +35,6 @@ func getLifeReading(classification: String) -> String {
         "faint": "You may need to chill out now and then. Yoga, meditation, walking, or taking time to play could do you good.",
         "broken": "Each break in the line represents a traumatic experience that has had an impact on your life choices."
     ]
-    print("We made it to life")
     return readings[classification]!
 }
 
