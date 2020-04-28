@@ -19,23 +19,24 @@ struct ReadingView: View {
     
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Header(title: "Your Reading", viewRouter: self.viewRouter)
-            Spacer()
+                .padding(.bottom)
             
             if (self.viewRouter.readings.count > 0) {
-                    VStack(alignment: .leading) {
+//                    VStack(alignment: .leading) {
                         ForEach((0 ..< self.viewRouter.lines.count), id: \.self) { lineIndex in
+                            VStack {
                             Button(action: { self.viewRouter.currentPage += 1; self.viewRouter.currentLineIndex = lineIndex}) {
                                 ReadingRow(line: self.viewRouter.lines[lineIndex], meaning: self.meanings[lineIndex])
                             }
                             .foregroundColor(Color.black)
+                            
+                            Spacer()
+                            }
                         }
-                    }
-                    .navigationBarTitle(Text("Your Reading"))
-                    .navigationBarBackButtonHidden(true)
-            } else {
-                Text("hey there")
+//                    }
+//                Spacer()
             }
         }
         .padding()
