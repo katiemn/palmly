@@ -31,64 +31,65 @@ struct TakePhoto: View {
     }
     
     var body: some View {
-        ZStack(alignment: .bottom) {
-            Color.black
-            .edgesIgnoringSafeArea(.top)
-            .edgesIgnoringSafeArea(.bottom)
-            
-            image?.resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-            
-            if (image == nil) {
-                VStack {
-                    Text("Get Your Palm Reading")
-                        .padding(.bottom)
-                        .padding(.bottom)
-
-                    .font(.custom("ZillaSlab-SemiBold", size: 35))
-
-                    Text("Take a picture of your left palm or upload an image from your camera roll")
-                    .font(.custom("DMSans-Regular", size: 25))
-
-                }
+        GeometryReader { geometry in
+            ZStack(alignment: .bottom) {
+                Color.black
+                .edgesIgnoringSafeArea(.top)
+                .edgesIgnoringSafeArea(.bottom)
                 
-                .font(.custom("DMSans-Regular", size: 30))
-                .foregroundColor(Color.white)
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
-                .padding()
-                .multilineTextAlignment(.center)
+                self.image?.resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: geometry.size.width, height: geometry.size.height, alignment: .center)
+                
+                if (self.image == nil) {
+                    VStack {
+                        Text("Get Your Palm Reading")
+                            .padding(.bottom)
+                            .padding(.bottom)
 
-            }
+                        .font(.custom("ZillaSlab-SemiBold", size: 35))
+
+                        Text("Take a picture of your left palm or upload an image from your camera roll")
+                        .font(.custom("DMSans-Regular", size: 25))
+
+                    }
+                    
+                    .font(.custom("DMSans-Regular", size: 30))
+                    .foregroundColor(Color.white)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                    .padding()
+                    .multilineTextAlignment(.center)
+                }
                         
-            HStack(spacing: 85) {
-                Button(action: {
-                    self.showingImagePicker = true
-                }) {
-                    Image("upload image")
+                HStack(spacing: 85) {
+                    Button(action: {
+                        self.showingImagePicker = true
+                    }) {
+                        Image("upload image")
+                    }
+                    .foregroundColor(Color.white)
+                    
+                    Button(action: { self.viewRouter.currentPage += 1}) {
+                        Image("temp get reading")
+                    }
+                    .disabled(self.getReadingButtonDisabled)
+                    .foregroundColor(self.getReadingButtonDisabled ? Color.gray : Color.white)
+       
+                    Button(action: {
+                        self.pickerSourceIsCamera = true
+                        self.showingImagePicker = true
+                    }) {
+                        Image("temp camera button")
+                    }
+                    .foregroundColor(Color.white)
                 }
-                .foregroundColor(Color.white)
-                
-                Button(action: { self.viewRouter.currentPage += 1}) {
-                    Image("temp get reading")
+                .padding(.bottom)
                 }
-                .disabled(getReadingButtonDisabled)
-                .foregroundColor(getReadingButtonDisabled ? Color.gray : Color.white)
-   
-                Button(action: {
-                    self.pickerSourceIsCamera = true
-                    self.showingImagePicker = true
-                }) {
-                    Image("temp camera button")
+                .sheet(isPresented: self.$showingImagePicker, onDismiss: self.loadImage) {
+                    ImagePicker(image: self.$inputImage, pickerSourceIsCamera: self.$pickerSourceIsCamera)
                 }
-                .foregroundColor(Color.white)
             }
-            .padding(.bottom)
         }
-        .sheet(isPresented: $showingImagePicker, onDismiss: loadImage) {
-            ImagePicker(image: self.$inputImage, pickerSourceIsCamera: self.$pickerSourceIsCamera)
-        }
-    }
 }
 
 struct TakePhoto_Previews: PreviewProvider {

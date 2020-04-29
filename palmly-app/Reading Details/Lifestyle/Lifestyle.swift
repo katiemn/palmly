@@ -101,7 +101,7 @@ struct Lifestyle: View {
           return [
             "Try meditating before starting your day. This may help you create some much needed space between your feelings and your actions.",
             "When you have a lot of small tasks, try writing out the bigger goal that these tasks will help you accomplish.",
-            "Don’t be afraid to show those you love your emotions. Your vulnerability will not undermine your leadership, but it may enhance it."
+            "Don’t be afraid to show your emotions to those you love. Your vulnerability will not undermine your leadership qualities."
           ]
 
         case 9:
@@ -122,6 +122,5 @@ struct Lifestyle: View {
 struct Lifestyle_Previews: PreviewProvider {
     static var previews: some View {
         Text("lifestyle")
-//        Lifestyle(lifestyleTips: testLifestyleTips)
     }
 }
