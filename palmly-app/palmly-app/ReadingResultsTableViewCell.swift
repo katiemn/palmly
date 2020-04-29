@@ -2,7 +2,6 @@
 //  ReadingResultsTableViewCell.swift
 //  palmly-app
 //
-//  Created by Katie Nguyen on 2/24/20.
 //  Copyright © 2020 Katie Nguyen. All rights reserved.
 //
 

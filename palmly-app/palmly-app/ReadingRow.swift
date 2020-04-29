@@ -21,6 +21,7 @@ struct ReadingRow: View {
                 .padding()
             Text(self.meaning)
                 .font(Font.custom("DMSans", size: 18))
+                .fixedSize(horizontal: false, vertical: true)
                 .padding(.leading)
                 .padding(.trailing)
         }

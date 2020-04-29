@@ -19,4 +19,6 @@ class ViewRouter: ObservableObject {
     @Published var lines = ["Life", "Head", "Heart"]
     @Published var results: [Result] = []
     @Published var readings: [String] = []
+    
+    @Published var personalityType: Int = 0
 }

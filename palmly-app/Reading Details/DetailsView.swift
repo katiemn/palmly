@@ -2,7 +2,6 @@
 //  DetailsView.swift
 //  palmly-app
 //
-//  Created by Vincent Fitzgerald Tolliver on 3/24/20.
 //  Copyright © 2020 Katie Nguyen. All rights reserved.
 //
 

@@ -29,8 +29,6 @@
 		A80C7B8C24566B7E008D459A /* DMSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A80C7B8B24566B7E008D459A /* DMSans-Regular.ttf */; };
 		A83FBB21245696830048BC17 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB152456967E0048BC17 /* DetailsView.swift */; };
 		A83FBB22245696870048BC17 /* Personality.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB172456967E0048BC17 /* Personality.swift */; };
-		A83FBB23245696890048BC17 /* PersonalityCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB182456967E0048BC17 /* PersonalityCard.swift */; };
-		A83FBB242456968B0048BC17 /* PersonalityShareable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB192456967E0048BC17 /* PersonalityShareable.swift */; };
 		A83FBB25245696900048BC17 /* PercentageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1B2456967E0048BC17 /* PercentageBar.swift */; };
 		A83FBB26245696900048BC17 /* Breakdown.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1C2456967E0048BC17 /* Breakdown.swift */; };
 		A83FBB27245696900048BC17 /* BreakdownRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83FBB1D2456967E0048BC17 /* BreakdownRow.swift */; };
@@ -95,8 +93,6 @@
 		A80C7B8B24566B7E008D459A /* DMSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DMSans-Regular.ttf"; sourceTree = "<group>"; };
 		A83FBB152456967E0048BC17 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
 		A83FBB172456967E0048BC17 /* Personality.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Personality.swift; sourceTree = "<group>"; };
-		A83FBB182456967E0048BC17 /* PersonalityCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityCard.swift; sourceTree = "<group>"; };
-		A83FBB192456967E0048BC17 /* PersonalityShareable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalityShareable.swift; sourceTree = "<group>"; };
 		A83FBB1B2456967E0048BC17 /* PercentageBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PercentageBar.swift; sourceTree = "<group>"; };
 		A83FBB1C2456967E0048BC17 /* Breakdown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breakdown.swift; sourceTree = "<group>"; };
 		A83FBB1D2456967E0048BC17 /* BreakdownRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreakdownRow.swift; sourceTree = "<group>"; };
@@ -230,8 +226,6 @@
 			isa = PBXGroup;
 			children = (
 				A83FBB172456967E0048BC17 /* Personality.swift */,
-				A83FBB182456967E0048BC17 /* PersonalityCard.swift */,
-				A83FBB192456967E0048BC17 /* PersonalityShareable.swift */,
 			);
 			path = Personality;
 			sourceTree = "<group>";
@@ -442,7 +436,6 @@
 				A83FBB29245696960048BC17 /* Lifestyle.swift in Sources */,
 				A8DB617024562BF700A5E15F /* MotherView.swift in Sources */,
 				A83FBB27245696900048BC17 /* BreakdownRow.swift in Sources */,
-				A83FBB242456968B0048BC17 /* PersonalityShareable.swift in Sources */,
 				A8DB616624561EA900A5E15F /* TakePhoto.swift in Sources */,
 				68B3A9BB243A641000F085AB /* CVPixelBufferExtension.swift in Sources */,
 				A83FBB26245696900048BC17 /* Breakdown.swift in Sources */,
@@ -457,7 +450,6 @@
 				68B8501223FB79BA004D3832 /* AppDelegate.swift in Sources */,
 				A83FBB21245696830048BC17 /* DetailsView.swift in Sources */,
 				68B8501423FB79BA004D3832 /* SceneDelegate.swift in Sources */,
-				A83FBB23245696890048BC17 /* PersonalityCard.swift in Sources */,
 				A83FBB28245696930048BC17 /* Tabs.swift in Sources */,
 				689717F824025CBC0093904D /* ReadingViewController.swift in Sources */,
 			);
