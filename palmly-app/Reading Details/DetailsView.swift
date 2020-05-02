@@ -24,6 +24,7 @@ struct DetailsView: View {
             
             if self.viewRouter.currentTab == 0 {
                 Breakdown(viewRouter: self.viewRouter)
+                    .padding(.bottom)
             } else if self.viewRouter.currentTab == 1 {
                 Personality(viewRouter: self.viewRouter)
             } else {

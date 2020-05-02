@@ -49,10 +49,12 @@ struct Lifestyle: View {
                         {
                             Circle()
                             .fill((index == self.selected) ? selectedCircleTabColor : circleTabColor)
-                            .frame(width: 20, height: 20)
+                            .frame(width: 15, height: 15)
                         }
                     }
                 }
+                
+                Spacer()
             }
         }
         .padding()

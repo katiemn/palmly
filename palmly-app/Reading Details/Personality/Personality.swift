@@ -13,7 +13,6 @@ struct Personality: View {
     
     @State var personalityType = 0
     @State var article: String = ""
-    @State var showArticle = false
     
     var body: some View {
         return VStack(alignment: .center) {
@@ -21,12 +20,16 @@ struct Personality: View {
             
             Text("Enneagram Type " + String(self.personalityType))
             .font(Font.custom("DMSans", size: 26))
+            
             Spacer()
-            ScrollView {
-                Text(self.article)
-                .font(Font.custom("DMSans", size: 20))
-                .lineSpacing(10)
-                .padding()
+            
+            if (self.article != "") {
+                ScrollView {
+                    Text(self.article)
+                    .font(Font.custom("DMSans", size: 20))
+                    .lineSpacing(10)
+                    .padding()
+                }
             }
             
             Spacer()
