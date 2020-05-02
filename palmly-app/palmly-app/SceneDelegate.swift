@@ -17,9 +17,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        guard let _ = (scene as? UIWindowScene) else { return }
 
         if let windowScene = scene as? UIWindowScene {
-            let newViewRouter = ViewRouter()
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: MotherView(viewRouter: newViewRouter))
+            window.rootViewController = UIHostingController(rootView: MotherView(viewRouter: ViewRouter()))
             self.window = window
             window.makeKeyAndVisible()
         }

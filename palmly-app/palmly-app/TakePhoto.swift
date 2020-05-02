@@ -88,6 +88,9 @@ struct TakePhoto: View {
                 .sheet(isPresented: self.$showingImagePicker, onDismiss: self.loadImage) {
                     ImagePicker(image: self.$inputImage, pickerSourceIsCamera: self.$pickerSourceIsCamera)
                 }
+                .onAppear {
+                    self.viewRouter.reinitialize();
+                }
             }
         }
 }

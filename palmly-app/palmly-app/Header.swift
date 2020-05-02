@@ -37,9 +37,6 @@ struct Header: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.leading)
 
-            Rectangle()
-                .fill(Color.gray)
-                .frame(height: 2)
         }
     }
 }
