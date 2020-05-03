@@ -19,4 +19,16 @@ class ViewRouter: ObservableObject {
     @Published var lines = ["Life", "Head", "Heart"]
     @Published var results: [Result] = []
     @Published var readings: [String] = []
+    
+    @Published var personalityType: Int = 0
+    
+    func reinitialize() {
+        currentPage = 0;
+        currentTab = 0;
+        currentLineIndex = 0;
+        
+        results = [];
+        readings = [];
+        personalityType = 0;
+    }
 }

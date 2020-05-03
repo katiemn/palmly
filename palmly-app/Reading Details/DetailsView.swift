@@ -2,7 +2,6 @@
 //  DetailsView.swift
 //  palmly-app
 //
-//  Created by Vincent Fitzgerald Tolliver on 3/24/20.
 //  Copyright © 2020 Katie Nguyen. All rights reserved.
 //
 
@@ -25,6 +24,7 @@ struct DetailsView: View {
             
             if self.viewRouter.currentTab == 0 {
                 Breakdown(viewRouter: self.viewRouter)
+                    .padding(.bottom)
             } else if self.viewRouter.currentTab == 1 {
                 Personality(viewRouter: self.viewRouter)
             } else {

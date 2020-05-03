@@ -5,52 +5,48 @@
 //  Created by Vincent Fitzgerald Tolliver on 3/21/20.
 //  Copyright © 2020 Apple. All rights reserved.
 //
-
 import SwiftUI
 
 struct ReadingView: View {
     @ObservedObject var viewRouter: ViewRouter
     
-    var heartModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.heartModelInfo, labelsFileInfo: MobileNet.heartLabelsInfo)
-    var lifeModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.lifeModelInfo, labelsFileInfo: MobileNet.lifeLabelsInfo)
-    var headModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.headModelInfo, labelsFileInfo: MobileNet.headLabelsInfo)
-    
     @State var meanings: [String] = ["", "", ""]
-    
-    
+    @State var imageBuffer: CVPixelBuffer?
+
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             Header(title: "Your Reading", viewRouter: self.viewRouter)
-            Spacer()
             
             if (self.viewRouter.readings.count > 0) {
-                    VStack(alignment: .leading) {
-                        ForEach((0 ..< self.viewRouter.lines.count), id: \.self) { lineIndex in
-                            Button(action: { self.viewRouter.currentPage += 1; self.viewRouter.currentLineIndex = lineIndex}) {
-                                ReadingRow(line: self.viewRouter.lines[lineIndex], meaning: self.meanings[lineIndex])
-                            }
-                            .foregroundColor(Color.black)
-                        }
+                ForEach((0 ..< self.viewRouter.lines.count), id: \.self) { lineIndex in
+                    VStack {
+                    Button(action: { self.viewRouter.currentPage += 1; self.viewRouter.currentLineIndex = lineIndex}) {
+                        ReadingRow(line: self.viewRouter.lines[lineIndex], meaning: self.meanings[lineIndex])
                     }
-                    .navigationBarTitle(Text("Your Reading"))
-                    .navigationBarBackButtonHidden(true)
-            } else {
-                Text("hey there")
+                    .foregroundColor(Color.black)
+                    
+                    Spacer()
+                    }
+                }
             }
         }
         .padding()
         .onAppear {
-            self.viewRouter.results.append( (self.lifeModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!)!)!)
-            self.viewRouter.results.append( (self.headModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!)!)!)
-            self.viewRouter.results.append( (self.heartModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!)!)!)
+            self.imageBuffer = self.viewRouter.imageBuffer
+            var heartModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.heartModelInfo, labelsFileInfo: MobileNet.heartLabelsInfo)
+            var lifeModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.lifeModelInfo, labelsFileInfo: MobileNet.lifeLabelsInfo)
+            var headModelDataHandler: ModelDataHandler? = ModelDataHandler(modelFileInfo: MobileNet.headModelInfo, labelsFileInfo: MobileNet.headLabelsInfo)
+            
+            self.viewRouter.results.append( lifeModelDataHandler?.runModel(onFrame: self.imageBuffer!) as! Result)
+            self.viewRouter.results.append( headModelDataHandler?.runModel(onFrame: self.imageBuffer!) as! Result)
+            self.viewRouter.results.append( heartModelDataHandler?.runModel(onFrame: self.imageBuffer!) as! Result)
             
             for i in 0 ..< self.viewRouter.lines.count {
-                self.viewRouter.readings.append(self.viewRouter.results[i].inferences[i].label)
+                self.viewRouter.readings.append(self.viewRouter.results[i].inferences[0].label)
                 self.meanings[i] = getReading(line: self.viewRouter.lines[i], classification: self.viewRouter.readings[i])
             }
         }
     }
-    
 }
 
 struct ReadingView_Previews: PreviewProvider {

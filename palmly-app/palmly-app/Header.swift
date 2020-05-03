@@ -14,7 +14,7 @@ struct Header: View {
     @ObservedObject var viewRouter: ViewRouter
     
     var body: some View {
-        VStack(alignment: .center) {
+        VStack(alignment: .leading, spacing: 10) {
             Button(
                 action: {
                     if self.viewRouter.currentPage > 0 {
@@ -22,25 +22,25 @@ struct Header: View {
                     }
                 })
             {
-                Image("back arrow").resizable()
-                    .foregroundColor(Color.black)
-                    .frame(width: 30, height: 30)
+                HStack {
+                    Image("back arrow").resizable()
+                        .frame(width: 30, height: 30)
+                    
+                    Text(self.title)
+                    .font(.custom("ZillaSlab-SemiBold", size: 35))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
+                }
+                .foregroundColor(Color.black)
+
             }
             .frame(maxWidth: .infinity, alignment: .leading)
             
             Rectangle()
                 .fill(Color.black)
                 .frame(height: 5)
-
-            Text(self.title)
-                .font(.custom("ZillaSlab-SemiBold", size: 40))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.leading)
-
-            Rectangle()
-                .fill(Color.gray)
-                .frame(height: 2)
         }
+        .padding(.top)
     }
 }
 

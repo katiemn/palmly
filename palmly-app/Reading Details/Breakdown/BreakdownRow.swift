@@ -2,7 +2,6 @@
 //  BreakdownRow.swift
 //  palmly-app
 //
-//  Created by Vincent Fitzgerald Tolliver on 3/23/20.
 //  Copyright © 2020 Katie Nguyen. All rights reserved.
 //
 
@@ -34,10 +33,6 @@ struct BreakdownRow: View {
 
 struct BreakdownRow_Previews: PreviewProvider {
     static var previews: some View {
-        Group {
-            BreakdownRow(meaning: "lskdfjsldkfj lskdfjlkej fjekfjelskfwj flekwejfewlfkjsdklfjwlekjekjfef jfkejf ejwoija;lks", probability: 0.8)
-            
-             BreakdownRow(meaning: "You may need to chill out now and then. Yoga, meditation, walking, or taking time to play could do you good.", probability: 0.98)
-        }
+        BreakdownRow(meaning: "You may need to chill out now and then. Yoga, meditation, walking, or taking time to play could do you good.", probability: 0.98)
     }
 }
