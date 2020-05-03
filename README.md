@@ -1,8 +1,35 @@
 # Palmly User Manual 
 
-![](Documents-Fall2019/palmly-poster.png)
+## iOS Application
+![](Documents-Spring2020/palmly-poster-spring.png)
+
+All files needed to run the application can be found in the palmly-app directory. 
+
+**Steps:**
+1. Download Xcode 
+2. Install Xcode Command Line Tools 
+```
+xcode-select --install
+```
+3. Change Directories into 'palmly-app'
+4. Install Cocoapods
+```
+sudo gem install cocoapods
+```
+5. Install TFLite Cocoapod 
+```
+pod install
+```
+6. Open the Project in Xcode from the Newly Created palmly-app.xcworkspace File
+7. Run the Application on by Pressing the Play Button in the Upper-Left Corner.
+8. Navigate the App on an iOS Simulator or Physical Device
+
+NOTE: If using the app in a simulated device, the camera functionality will not work. Instead, select an image of a left palm from the device's photo library. 
+
+NOTE: In order to build the app, a personalized development team and bundle identifier may need to be established. 
 
 ## Neural Networks
+![](Documents-Fall2019/palmly-poster.png)
 
 All files needed to test the three retrained models can be found in the Classifiers directory of this repo. This tutorial has been adopted from: https://codelabs.developers.google.com/codelabs/tensorflow-for-poets/#0 
 
