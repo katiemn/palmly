@@ -40,9 +40,9 @@ struct ReadingView: View {
         }
         .padding()
         .onAppear {
-            self.viewRouter.results.append( self.lifeModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!) as! Result)
-            self.viewRouter.results.append( self.headModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!) as! Result)
-            self.viewRouter.results.append( self.heartModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!) as! Result)
+            self.viewRouter.results.append( (self.lifeModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!)!)!)
+            self.viewRouter.results.append( (self.headModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!)!)!)
+            self.viewRouter.results.append( (self.heartModelDataHandler?.runModel(onFrame: self.viewRouter.imageBuffer!)!)!)
             
             for i in 0 ..< self.viewRouter.lines.count {
                 self.viewRouter.readings.append(self.viewRouter.results[i].inferences[i].label)
