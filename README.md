@@ -21,8 +21,9 @@ sudo gem install cocoapods
 pod install
 ```
 6. Open the Project in Xcode from the Newly Created palmly-app.xcworkspace File
-7. Run the Application by Pressing the Play Button in the Upper-Left Corner.
+7. Run the Application by Pressing the Play Button in the Upper-Left Corner
 8. Navigate the App on an iOS Simulator or Physical Device
+![](Documents-Spring2020/palmly-images.png)
 
 NOTE: If using the app in a simulated device, the camera functionality will not work. Instead, select an image of a left palm from the device's photo library. 
 
